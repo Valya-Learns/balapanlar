@@ -1,0 +1,9 @@
+.telegram-block {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1200px;
+	padding: 10px;
+	background-color: #ae46ff;
+	border-radius: 60px;
+}
