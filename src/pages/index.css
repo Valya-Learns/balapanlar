@@ -1,9 +1,11 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts.css');
+@import url('../blocks/test/test.css');
 @import url('../blocks/body/body.css');
 @import url('../blocks/page/page.css');
 @import url('../blocks/header/header.css');
 @import url('../blocks/logo/_type/logo_type_header-animals.css');
+@import url('../blocks/logo/_type/logo_type_header-text.css');
 @import url('../blocks/header/__menu/header__menu.css');
 @import url('../blocks/list/list.css');
 @import url('../blocks/link/link.css');
@@ -11,3 +13,15 @@
 @import url('../blocks/header/__nav-item/header__nav-item.css');
 @import url('../blocks/button/button.css');
 @import url('../blocks/button/_for/button_for_header.css');
+@import url('../blocks/intro/intro.css');
+@import url('../blocks/intro/__lead/intro__lead.css');
+@import url('../blocks/intro/__title/intro__title.css');
+@import url('../blocks/button/_for/button_for_lead.css');
+@import url('../blocks/button/_for/button_for_telegram.css');
+@import url('../blocks/telegram-block/telegram-block.css');
+@import url('../blocks/telegram-block/__logo/telegram-block__logo.css');
+@import url('../blocks/telegram-block/__welcome/telegram-block__welcome.css');
+@import url('../blocks/telegram-block/__text/telegram-block__text.css');
+@import url('../blocks/intro/__text/intro__text.css');
+@import url('../blocks/main/__section/_margin/main__section_margin_narrow.css');
+@import url('../blocks/main/__section/_margin/main__section_margin_wide.css');

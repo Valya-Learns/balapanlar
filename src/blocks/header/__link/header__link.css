@@ -1,6 +1,25 @@
 .header__link {
+	position: relative;
+	padding-bottom: 5px;
 	color: #000000;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 22px;
+}
+
+.header__link::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 1px;
+	margin: auto;
+	background: #000000;
+	transition: all 0.5s;
+	content: '';
+}
+
+.header__link:hover::after {
+	width: 100%;
 }
