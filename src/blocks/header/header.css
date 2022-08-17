@@ -1,8 +1,14 @@
 .header {
+	position: sticky;
+	top: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	box-sizing: border-box;
 	width: 100%;
+
+	/* border-bottom: 10px #eaf0ff solid; */
+	margin-bottom: 10px;
 	padding: 10px 20px;
 	background-color: #ffffff;
 }
