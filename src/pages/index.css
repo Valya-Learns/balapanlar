@@ -27,3 +27,8 @@
 @import url('../blocks/about/__school-option-item/about__school-option-item.css');
 @import url('../blocks/about/__school-option-item/_type/about__school-option-item_type_s.css');
 @import url('../blocks/about/__school-option-text/about__school-option-text.css');
+@import url('../blocks/partners/partners.css');
+@import url('../blocks/partners/__title/partners__title.css');
+@import url('../blocks/partners/__container/partners__container.css');
+@import url('../blocks/partners/__partner-logo/partners__partner-logo.css');
+@import url('../blocks/partners/__description/partners__description.css');
