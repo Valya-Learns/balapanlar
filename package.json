@@ -25,5 +25,8 @@
 	"type": "module",
 	"lint-staged": {
 		"*": "npm run test"
+	},
+	"dependencies": {
+		"gsap": "^3.11.0"
 	}
 }
