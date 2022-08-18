@@ -1,7 +1,7 @@
 .about__school-option {
 	display: flex;
 	flex-direction: row;
-	margin-top: 22px;
+	margin-top: 15px;
 }
 
 .about__school-option:first-child {
