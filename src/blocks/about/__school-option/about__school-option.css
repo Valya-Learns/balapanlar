@@ -1,0 +1,9 @@
+.about__school-option {
+	display: flex;
+	flex-direction: row;
+	margin-top: 22px;
+}
+
+.about__school-option:first-child {
+	margin-top: 0;
+}
