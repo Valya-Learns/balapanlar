@@ -1,11 +1,12 @@
 .popup__container {
+	position: relative;
 	display: grid;
 	grid-template-rows: 1fr auto;
 	grid-template-columns: 1fr;
 	justify-items: left;
 	box-sizing: border-box;
-	width: 700px;
-	height: 600px;
+	min-width: 600px;
+	min-height: 600px;
 	padding: 30px;
 	background: #ffffff;
 	border-radius: 60px;

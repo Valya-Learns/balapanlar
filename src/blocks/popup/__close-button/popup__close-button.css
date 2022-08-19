@@ -1,27 +1,12 @@
 .popup__close-button {
-	position: relative;
-	padding: 0 0 5px 0;
-	font-weight: 600;
-	font-size: 20px;
-	line-height: 24px;
+	position: absolute;
+	top: 35px;
+	right: 35px;
+	width: 20px;
+	height: 20px;
 	background-color: transparent;
+	background-image: url('../../../vendor/images/close-button.svg');
+	background-size: cover;
 	border: 0;
 	cursor: pointer;
-}
-
-.popup__close-button::after {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 0%;
-	height: 1px;
-	margin: auto;
-	background: #000000;
-	transition: all 0.5s;
-	content: '';
-}
-
-.popup__close-button:hover::after {
-	width: 100%;
 }
