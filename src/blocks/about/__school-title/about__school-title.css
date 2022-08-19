@@ -1,0 +1,11 @@
+.about__school-title {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	width: 70%;
+	margin: 0;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 56px;
+	letter-spacing: -1px;
+}
