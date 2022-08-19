@@ -1,0 +1,9 @@
+.courses__programming-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 40px 0 0;
+	padding: 50px 10px 10px;
+	background-color: #ffd643;
+	border-radius: 70px;
+}

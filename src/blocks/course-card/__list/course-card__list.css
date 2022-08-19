@@ -1,0 +1,5 @@
+.course-card__list {
+	margin: 0;
+	padding: 0 0 0 30px;
+	list-style-image: url('../../../vendor/images/done.svg');
+}

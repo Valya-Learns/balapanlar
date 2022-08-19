@@ -1,0 +1,7 @@
+.course-card__skills {
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid black;
+	border-radius: 50px;
+}
