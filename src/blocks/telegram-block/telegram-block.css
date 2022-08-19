@@ -1,6 +1,7 @@
 .telegram-block {
 	display: flex;
 	justify-content: space-between;
+	box-sizing: border-box;
 	width: 100%;
 	max-width: 1200px;
 	padding: 10px;

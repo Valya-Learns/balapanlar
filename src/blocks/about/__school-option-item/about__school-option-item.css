@@ -1,0 +1,8 @@
+.about__school-option-item {
+	display: block;
+	width: 18px;
+	height: 18px;
+	object-fit: contain;
+	object-position: center;
+	margin-right: 10px;
+}

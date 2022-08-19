@@ -1,8 +1,8 @@
-.intro__text {
-	max-width: 1050px;
-	margin: 120px 120px;
+.partners__title {
+	margin: 0 auto;
 	font-weight: 600;
 	font-size: 36px;
 	line-height: 44px;
 	letter-spacing: -1px;
+	text-align: center;
 }

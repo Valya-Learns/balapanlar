@@ -1,6 +1,7 @@
-.intro__text {
-	max-width: 1050px;
-	margin: 120px 120px;
+.section-subtitle {
+	max-width: 1000px;
+	margin: 0;
+	padding-top: 40px;
 	font-weight: 600;
 	font-size: 36px;
 	line-height: 44px;
