@@ -1,0 +1,7 @@
+.course-card {
+	display: grid;
+	row-gap: 30px;
+	padding: 30px;
+	background-color: #ffffff;
+	border-radius: 60px;
+}
