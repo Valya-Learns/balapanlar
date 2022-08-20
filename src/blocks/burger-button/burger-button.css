@@ -1,0 +1,20 @@
+.burger-button {
+	position: relative;
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+}
+
+.burger-button:hover {
+	background-color: transparent;
+}
+
+@media screen and (max-width: 1150px) {
+	.burger-button {
+		display: block;
+	}
+}

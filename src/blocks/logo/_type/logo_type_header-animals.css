@@ -4,3 +4,11 @@
 	background-image: url('../../../vendor/images/logo-animals.svg');
 	background-size: contain;
 }
+
+@media screen and (max-width: 1150px) {
+	.logo_type_header-animals {
+		width: 192px;
+		height: 36px;
+		background-image: url('../../../vendor/images/logo-text.svg');
+	}
+}

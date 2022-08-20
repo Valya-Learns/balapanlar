@@ -12,6 +12,10 @@
 	animation: cycle 2s ease-in-out forwards;
 }
 
+.button:active {
+	border: 0;
+}
+
 @keyframes cycle {
 	0% {
 		transform: rotate(0) translate(0, 0);

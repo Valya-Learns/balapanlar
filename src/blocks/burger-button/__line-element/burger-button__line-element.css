@@ -1,0 +1,18 @@
+.burger-button__line-element {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: #000000;
+	border-radius: 50px;
+}
+
+.burger-button__line-element:nth-child(1) {
+	top: 12px;
+	transform-origin: left center;
+}
+
+.burger-button__line-element:nth-child(2) {
+	top: 17px;
+	transform-origin: left center;
+}
