@@ -1,4 +1,5 @@
 import { PopupWithCourse } from "../components/PopupWithCourse.js";
+import {PopupWithPartner} from '../components/PopupWithPartner.js'
 
 document.addEventListener("scroll", () => {
 	let scroll = window.pageYOffset;
@@ -25,16 +26,26 @@ cards.forEach((card) => {
 		}
 }})
 
-const popup = new PopupWithCourse('.popup_type_course')
+const popup = new PopupWithCourse('.popup_type_course');
 
 const courseElemts = document.querySelectorAll('.course-card');
 courseElemts.forEach((item => {
 	item.addEventListener('mousedown', (evt) => {
-		console.log(evt.target)
-		popup.open(item.cloneNode(true).innerHTML)
+		console.log(evt.target);
+		popup.open(item.cloneNode(true).innerHTML);
 	})
 }))
 
 // const node = courseElem.cloneNode(true).innerHTML
 // console.log(node)
 // popup.open(node)
+
+
+const popupPartner = new PopupWithPartner('.popup_type_partner');
+
+const partners = document.querySelectorAll('.partners__partner-item');
+partners.forEach(partner => {
+	partner.addEventListener('click', (evt) => {
+		popupPartner.open(partner.cloneNode(true));
+	})
+});
