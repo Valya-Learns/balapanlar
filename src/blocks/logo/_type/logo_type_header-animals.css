@@ -1,4 +1,6 @@
 .logo_type_header-animals {
 	width: 101px;
 	height: 100px;
+	background-image: url('../../../vendor/images/logo-animals.svg');
+	background-size: contain;
 }

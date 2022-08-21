@@ -1,0 +1,5 @@
+.telegram-block__welcome {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

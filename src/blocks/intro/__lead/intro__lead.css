@@ -1,0 +1,12 @@
+.intro__lead {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	justify-items: center;
+	box-sizing: border-box;
+	width: 100%;
+	padding-bottom: 10px;
+	background-image: url('../../../vendor/images/intro.jpg');
+	background-size: cover;
+	border-radius: 60px;
+	aspect-ratio: 16 / 9.47;
+}
