@@ -1,5 +1,5 @@
 .principles__psevdo{
-	overflow-x: hidden;
+	display: flex;
 	width: 60vw;
-	display:flex;
+	overflow-x: hidden;
 }

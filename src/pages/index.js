@@ -3,10 +3,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 let sections = gsap.utils.toArray(".principles__card");
 
-import './index.css';
+import "./index.css";
 
 // gsap.to(sections, {
 //   xPercent: -100 * (sections.length - 1),
@@ -23,15 +22,15 @@ import './index.css';
 // });
 
 gsap.to(".principles", {
-  xPercent: -66.66666,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".principles",
-    pin: true,
-    scrub: 2,
-    snap: 0.5,
-    // base vertical scrolling on how wide the container is so it feels more natural.
-    end: "+=100%",
+	xPercent: -66.66666,
+	ease: "none",
+	scrollTrigger: {
+		trigger: ".principles",
+		pin: true,
+		scrub: 2,
+		snap: 0.5,
+		//base vertical scrolling on how wide the container is so it feels more natural.
+		end: "+=100%",
 		markers: true,
-  }
+	},
 });
