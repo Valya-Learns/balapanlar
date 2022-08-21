@@ -1,9 +1,18 @@
 .principles__card {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 1000px;
+	height: 100vh;
 	font-size: 60px;
 	line-height: 68px;
+	}
+
+.principles__card:first-of-type{
+	border-radius: 60px 0 0 60px;
+}
+
+.principles__card:last-of-type{
+	border-radius:  0 60px 60px 0;
 }
