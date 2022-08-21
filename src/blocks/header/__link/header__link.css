@@ -1,6 +1,5 @@
 .header__link {
 	position: relative;
-	padding-bottom: 5px;
 	color: #000000;
 	font-weight: 500;
 	font-size: 18px;
@@ -10,7 +9,7 @@
 .header__link::after {
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: -5px;
 	left: 0;
 	width: 0%;
 	height: 1px;

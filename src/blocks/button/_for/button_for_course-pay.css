@@ -1,4 +1,5 @@
 .button_for_course-pay {
+	grid-area: button;
 	align-self: end;
 	width: 230px;
 	height: 64px;

@@ -1,6 +1,11 @@
 .course-card {
-	display: grid;
+	display: flex;
+	grid-template-rows: 1fr 1fr 1fr minmax(min-content, 30px) auto;
+	flex-direction: column;
+
+	/* max-height: 563px; */
 	row-gap: 30px;
+	box-sizing: border-box;
 	padding: 30px;
 	background-color: #ffffff;
 	border-radius: 60px;
