@@ -38,4 +38,3 @@ courseElemts.forEach((item => {
 // const node = courseElem.cloneNode(true).innerHTML
 // console.log(node)
 // popup.open(node)
->>>>>>> b115ece8b6cfde6d9c3b93c754ff6bdeea9bb3cd
