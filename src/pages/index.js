@@ -1,3 +1,5 @@
+import { PopupWithCourse } from "../components/PopupWithCourse.js";
+
 document.addEventListener("scroll", () => {
 	let scroll = window.pageYOffset;
 	const headerLogo = document.querySelector(".header").querySelector(".logo");
@@ -10,8 +12,6 @@ document.addEventListener("scroll", () => {
 		headerLogo.classList.add("logo_type_header-animals");
 	}
 });
-
-
 const cards = document.querySelectorAll('.course-card');
 
 cards.forEach((card) => {
@@ -24,3 +24,18 @@ cards.forEach((card) => {
 	}
 		}
 }})
+
+const popup = new PopupWithCourse('.popup_type_course')
+
+const courseElemts = document.querySelectorAll('.course-card');
+courseElemts.forEach((item => {
+	item.addEventListener('mousedown', (evt) => {
+		console.log(evt.target)
+		popup.open(item.cloneNode(true).innerHTML)
+	})
+}))
+
+// const node = courseElem.cloneNode(true).innerHTML
+// console.log(node)
+// popup.open(node)
+>>>>>>> b115ece8b6cfde6d9c3b93c754ff6bdeea9bb3cd
