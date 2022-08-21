@@ -1,6 +1,6 @@
 .courses__grid-wrapper_small {
 	grid-template-columns: max(386px) max(408px) max(386px);
-	max-width: 1180px;
+	max-width: 1200px;
 	margin: auto;
 	padding: 10px 0;
 }

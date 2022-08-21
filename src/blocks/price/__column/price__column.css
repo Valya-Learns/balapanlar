@@ -1,0 +1,4 @@
+.price__column {
+	display: grid;
+	gap: 15px;
+}
