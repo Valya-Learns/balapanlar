@@ -1,4 +1,6 @@
 .price__column {
-	display: grid;
-	gap: 15px;
+	/* display: grid;
+	gap: 15px; */
+	display: flex;
+	flex-direction: column;
 }
