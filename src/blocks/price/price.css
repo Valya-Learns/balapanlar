@@ -1,10 +1,14 @@
 .price {
-	display: flex;
-	align-items: stretch;
-	gap: 53px;
+	display: grid;
+	grid-template-columns: minmax(min-content, 345px) 1fr minmax(min-content, 325px);
+	grid-template-areas: 'title included not-included'
+		'button included not-included';
+	justify-content: space-between;
+	box-sizing: border-box;
 	max-width: 1200px;
 	margin: auto;
 	padding: 30px;
+	column-gap: 50px;
 	background-color: #d0ddff;
 	border-radius: 60px;
 }

@@ -1,0 +1,6 @@
+.course-card__buttons-container {
+	display: flex;
+	align-items: center;
+	row-gap: 30px;
+	margin-top: auto;
+}

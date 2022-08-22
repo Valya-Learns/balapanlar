@@ -1,4 +1,8 @@
+import { PopupWithCourse } from "../components/PopupWithCourse.js";
+import {PopupWithPartner} from '../components/PopupWithPartner.js'
+
 function toggleHeader() {
+document.addEventListener("scroll", () => {
 	let scroll = window.pageYOffset;
 	const headerLogo = document.querySelector(".header").querySelector(".logo");
 		if (scroll > 0) {
@@ -8,7 +12,7 @@ function toggleHeader() {
 			headerLogo.classList.remove("logo_type_header-text");
 			headerLogo.classList.add("logo_type_header-animals");
 		}
-}
+})}
 
 const burgerButton = document.querySelector('.burger-button');
 const burgerButtonElements = burgerButton.querySelectorAll(".burger-button__line-element");
@@ -23,13 +27,13 @@ window.addEventListener("resize", () => {
 	}
 });
 
-// function enableActiveBurgerButton() {
-// 	element.classList.add("burger-button__line-element_active");
-// }
+function enableActiveBurgerButton() {
+	element.classList.add("burger-button__line-element_active");
+}
 
-// function disableActiveBurgerButton() {
-// 	element.classList.remove("burger-button__line-element_active");
-// }
+function disableActiveBurgerButton() {
+	element.classList.remove("burger-button__line-element_active");
+}
 
 function toggleBurgerButton() {
 	burgerButtonElements.forEach(function(element) {
@@ -42,3 +46,40 @@ function toggleBurgerButton() {
 }
 
 burgerButton.addEventListener('mousedown', toggleBurgerButton)
+
+const cards = document.querySelectorAll('.course-card');
+
+cards.forEach((card) => {
+	if (card.querySelector('.course-card__list')) {
+		const courseList = card.querySelector('.course-card__list');
+		const items = courseList.querySelectorAll('.course-card__list-item');
+		if (items.length > 1) {
+			for (let i = 1; i < items.length; i++) {
+				items[i].style.display = 'none';
+	}
+		}
+}})
+
+const popup = new PopupWithCourse('.popup_type_course');
+
+const courseElemts = document.querySelectorAll('.course-card');
+courseElemts.forEach((item => {
+	item.addEventListener('mousedown', (evt) => {
+		console.log(evt.target);
+		popup.open(item.cloneNode(true).innerHTML);
+	})
+}))
+
+// const node = courseElem.cloneNode(true).innerHTML
+// console.log(node)
+// popup.open(node)
+
+
+const popupPartner = new PopupWithPartner('.popup_type_partner');
+
+const partners = document.querySelectorAll('.partners__partner-item');
+partners.forEach(partner => {
+	partner.addEventListener('click', (evt) => {
+		popupPartner.open(partner.cloneNode(true));
+	})
+});
