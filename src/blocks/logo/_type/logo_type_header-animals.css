@@ -2,13 +2,14 @@
 	width: 101px;
 	height: 100px;
 	background-image: url('../../../vendor/images/logo-animals.svg');
+	background-repeat: no-repeat;
 	background-size: contain;
 }
 
-@media screen and (max-width: 1150px) {
+/* @media screen and (max-width: 1150px) {
 	.logo_type_header-animals {
 		width: 192px;
 		height: 36px;
 		background-image: url('../../../vendor/images/logo-text.svg');
 	}
-}
+} */
