@@ -1,21 +1,16 @@
 import { PopupWithCourse } from "../components/PopupWithCourse.js";
-import {PopupWithPartner} from '../components/PopupWithPartner.js'
+import { PopupWithPartner } from '../components/PopupWithPartner.js';
+import { PopupWithBurger } from "../components/PopupWithBurger.js";
+import { checkScreenWidth } from "../components/headerState.js";
 
-document.addEventListener("scroll", () => {
-	let scroll = window.pageYOffset;
-	const headerLogo = document.querySelector(".header").querySelector(".logo");
-	const introSection = document.querySelector(".intro");
+const popupHeader = new PopupWithBurger('.popup_type_header');
 
-	if (scroll > 0) {
-		headerLogo.classList.remove("logo_type_header-animals");
-		headerLogo.classList.add("logo_type_header-text");
-		introSection.style.paddingTop = "48px"
-	} else {
-		headerLogo.classList.remove("logo_type_header-text");
-		headerLogo.classList.add("logo_type_header-animals");
-		introSection.style.paddingTop = "0"
-	}
-});
+checkScreenWidth(popupHeader);
+
+window.addEventListener('resize', () => checkScreenWidth(popupHeader))
+
+popupHeader.burgerButton.addEventListener('mousedown', popupHeader.toggleBurgerMenu);
+
 const cards = document.querySelectorAll('.course-card');
 
 cards.forEach((card) => {
