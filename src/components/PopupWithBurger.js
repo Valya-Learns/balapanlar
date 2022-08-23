@@ -10,13 +10,13 @@ export class PopupWithBurger extends Popup {
 	open() {
 		this._popup.classList.add("popup_opened");
 		this._setEventListeners();
-		this._toggleBurgerButton();
+		this._activateBurgerButton();
 	}
 
 	close() {
 		this._popup.classList.remove("popup_opened");
 		this._removeEventListeners();
-		this._toggleBurgerButton();
+		this._deactivateBurgerButton();
 	}
 
 	toggleBurgerMenu = () => {
@@ -24,28 +24,34 @@ export class PopupWithBurger extends Popup {
 	}
 
 	_handlePressClick = (evt) => {
-		if (
-			!evt.target.classList.contains("popup_opened") &&
-			!evt.target.classList.contains("logo_type_header-animals")
+		if (!evt.target.classList.contains("popup_opened") &&
+			!evt.target.classList.contains("logo_type_header-animals") &&
+			!evt.target.classList.contains('burger-button') &&
+			!evt.target.classList.contains('burger-button__line-element')
 		) {
 			this.close();
 		}
 	};
 
-	deactivateBurgerButton() {
+	_setEventListeners() {
+		document.addEventListener("mousedown", this._handlePressClick);
+		document.addEventListener("keydown", this._handlePressEsc);
+	}
+
+	_removeEventListeners() {
+		document.removeEventListener("mousedown", this._handlePressClick);
+		document.removeEventListener("keydown", this._handlePressEsc);
+	}
+
+	_deactivateBurgerButton() {
 		this._burgerButtonElements.forEach(function(element) {
 			element.classList.remove("burger-button__line-element_active");
 		});
 	}
 
-	_toggleBurgerButton() {
+	_activateBurgerButton() {
 		this._burgerButtonElements.forEach(function(element) {
-			if (!element.classList.contains("burger-button__line-element_active")) {
-				element.classList.add("burger-button__line-element_active");
-			} else {
-				element.classList.remove("burger-button__line-element_active");
-			}
+			element.classList.add("burger-button__line-element_active");
 		});
 	}
-
 }

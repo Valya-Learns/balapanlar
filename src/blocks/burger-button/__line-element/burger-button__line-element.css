@@ -5,6 +5,8 @@
 	height: 3px;
 	background-color: #000000;
 	border-radius: 50px;
+
+	/* transition: transform 0.4s ease-in; */
 }
 
 .burger-button__line-element:nth-child(1) {
