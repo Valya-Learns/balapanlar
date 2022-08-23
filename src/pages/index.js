@@ -1,3 +1,4 @@
+
 import { PopupWithCourse } from "../components/PopupWithCourse.js";
 import {PopupWithPartner} from '../components/PopupWithPartner.js'
 
@@ -34,7 +35,6 @@ const popup = new PopupWithCourse('.popup_type_course');
 const courseElemts = document.querySelectorAll('.course-card');
 courseElemts.forEach((item => {
 	item.addEventListener('mousedown', (evt) => {
-		console.log(evt.target);
 		popup.open(item.cloneNode(true).innerHTML);
 	})
 }))
