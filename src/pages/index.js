@@ -1,15 +1,19 @@
 import { PopupWithCourse } from "../components/PopupWithCourse.js";
+import {PopupWithPartner} from '../components/PopupWithPartner.js'
 
 document.addEventListener("scroll", () => {
 	let scroll = window.pageYOffset;
 	const headerLogo = document.querySelector(".header").querySelector(".logo");
+	const introSection = document.querySelector(".intro");
 
 	if (scroll > 0) {
 		headerLogo.classList.remove("logo_type_header-animals");
 		headerLogo.classList.add("logo_type_header-text");
+		introSection.style.paddingTop = "48px"
 	} else {
 		headerLogo.classList.remove("logo_type_header-text");
 		headerLogo.classList.add("logo_type_header-animals");
+		introSection.style.paddingTop = "0"
 	}
 });
 const cards = document.querySelectorAll(".course-card");
@@ -26,10 +30,20 @@ cards.forEach((card) => {
 	}
 });
 
-const popup = new PopupWithCourse(".popup_type_course");
+const popup = new PopupWithCourse('.popup_type_course');
 
 document.querySelectorAll(".course-card__popup-button").forEach((btn) => {
 	btn.addEventListener("mousedown", () => {
 		popup.open(btn.closest(".course-card").cloneNode(true).innerHTML);
 	});
+});
+
+
+const popupPartner = new PopupWithPartner('.popup_type_partner');
+
+const partners = document.querySelectorAll('.partners__partner-item');
+partners.forEach(partner => {
+	partner.addEventListener('click', (evt) => {
+		popupPartner.open(partner.cloneNode(true));
+	})
 });

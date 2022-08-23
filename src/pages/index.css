@@ -83,5 +83,9 @@
 @import url('../blocks/partners/__title/partners__title.css');
 @import url('../blocks/partners/__container/partners__container.css');
 @import url('../blocks/partners/__partner-item/partners__partner-item.css');
+@import url('../blocks/partners/__partner-link/partners__partner-link.css');
 @import url('../blocks/partners/__partner-logo/partners__partner-logo.css');
 @import url('../blocks/partners/__description/partners__description.css');
+@import url('../blocks/popup/__container/_type/popup__container_type_partner.css');
+@import url('../blocks/popup/__partner-image/popup__partner-image.css');
+@import url('../blocks/popup/__partner-description/popup__partner-description.css');
