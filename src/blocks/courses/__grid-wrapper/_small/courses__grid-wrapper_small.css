@@ -1,6 +1,18 @@
 .courses__grid-wrapper_small {
-	grid-template-columns: max(386px) max(408px) max(386px);
+	grid-template-columns: minmax(min-content, 386px) minmax(min-content, 408px) minmax(min-content, 386px);
 	max-width: 1200px;
 	margin: auto;
-	padding: 10px 0;
+	padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+	.courses__grid-wrapper_small {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.courses__grid-wrapper_small {
+		grid-template-columns: 1fr;
+	}
 }
