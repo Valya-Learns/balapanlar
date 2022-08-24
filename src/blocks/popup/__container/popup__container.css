@@ -6,8 +6,22 @@
 	justify-items: left;
 	box-sizing: border-box;
 	max-width: 1200px;
+	margin: auto;
 	padding: 30px;
 	background: #ffffff;
 	border-radius: 60px;
 	cursor: default;
+}
+
+@media screen and (max-width: 1100px) {
+	.popup__container {
+		margin: auto 10px;
+		padding: 15px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.popup__container {
+		padding: 15px;
+	}
 }

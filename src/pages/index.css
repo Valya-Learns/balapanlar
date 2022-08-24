@@ -35,6 +35,7 @@
 @import url('../blocks/popup/__close-button/popup__close-button.css');
 @import url('../blocks/popup/__map/popup__map.css');
 @import url('../blocks/popup/__content/popup__content.css');
+@import url('../blocks/popup/__text-skills/popup__text-skills.css');
 @import url('../blocks/courses/courses.css');
 @import url('../blocks/courses/__programming-wrapper/courses__programming-wrapper.css');
 @import url('../blocks/courses/__subtitle/courses__subtitle.css');

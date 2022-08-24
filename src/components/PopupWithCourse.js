@@ -6,15 +6,21 @@ export class PopupWithCourse extends Popup {
 	}
 
 	open(nodeElem) {
+		this._changeStyle(nodeElem)
+		super.open()
+	}
+
+	_changeStyle(nodeElem) {
 		const content = this._popup.querySelector('.popup__content')
+		content.style.display = 'flex';
 		content.innerHTML = nodeElem;
+		content.querySelector('.course-card__popup-button').remove()
 		content.querySelector('.flex-container_info').style = 'flex-direction: row';
 		content.querySelector('.flex-container_text').style = 'gap: 30px';
-		content.querySelector('.course-card__list').style = `
-		display: grid;
-		grid-template-columns: max(500px) max(500px);
-		column-gap: 50px
-		`
-			super.open()
+		content.querySelector('.course-card__list').className = 'popup__text-skills';
+		content.querySelectorAll('.course-card__list-item').forEach(item => {
+			item.classList.remove('course-card__list-item')
+			item.style = 'display: list';
+		})
 	}
 }

@@ -12,3 +12,22 @@
 	background-color: #d0ddff;
 	border-radius: 60px;
 }
+
+@media screen and (max-width: 1200px) {
+	.price {
+		grid-template-areas: 'title included included'
+			'button not-included not-included';
+		margin: auto 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.price {
+		grid-template-areas: 'title title title'
+			'included included included'
+			'not-included not-included not-included'
+			'button button button';
+		margin: auto 15px;
+		padding: 15px;
+	}
+}
