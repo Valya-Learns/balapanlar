@@ -3,6 +3,7 @@
 @import url('../blocks/body/body.css');
 @import url('../blocks/body/_no-scroll/body_no-scroll.css');
 @import url('../blocks/page/page.css');
+@import url('../blocks/main/main.css');
 @import url('../blocks/header/header.css');
 @import url('../blocks/logo/_type/logo_type_header-animals.css');
 @import url('../blocks/logo/_type/logo_type_header-text.css');
@@ -98,3 +99,12 @@
 @import url('../blocks/popup/__partner-image/popup__partner-image.css');
 @import url('../blocks/popup/__partner-description/popup__partner-description.css');
 @import url('../blocks/popup/_type/popup_type_header.css');
+@import url('../blocks/principles/principles.css');
+@import url('../blocks/principles/__card/principles__card.css');
+@import url('../blocks/principles/__text/principles__text.css');
+@import url('../blocks/principles/__pic/principles__pic.css');
+@import url('../blocks/principles/__pic/_triangle/principles__pic_triangle.css');
+@import url('../blocks/principles/__heading/principles__heading.css');
+@import url('../blocks/principles/__pic/_container/principles__pic_container.css');
+@import url('../blocks/principles/__pic/_oval/principles__pic_oval.css');
+@import url('../blocks/principles/__pic/_complex/principles__pic_complex.css');
