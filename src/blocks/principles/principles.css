@@ -1,8 +1,7 @@
 .principles {
-	bottom: 10px;
 	display: flex;
 	flex-wrap: nowrap;
-	width: 100%;
+	justify-items: flex-start;
 	height: 100vh;
 	overflow: hidden;
 	color: #ffffff;

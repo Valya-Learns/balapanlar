@@ -1,18 +1,10 @@
 .principles__card {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
 	height: 100vh;
 	font-size: 60px;
 	line-height: 68px;
-}
-
-.principles__card:first-of-type{
-	border-radius: 60px 0 0 60px;
-}
-
-.principles__card:last-of-type{
-	border-radius: 0 60px 60px 0;
 }
