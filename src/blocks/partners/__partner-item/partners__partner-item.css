@@ -1,10 +1,11 @@
 .partners__partner-item {
 	display: block;
 	overflow: hidden;
+	cursor: pointer;
 	will-change: transform;
-	transition: transform 0.4s ease-in-out;
+	transition: transform 0.9s ease-in-out;
 }
 
 .partners__partner-item:hover {
-	transform: scale(1.1);
+	transform: scale(1.11);
 }

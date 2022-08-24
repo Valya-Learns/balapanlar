@@ -1,6 +1,8 @@
 .course-card {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	row-gap: 30px;
+	box-sizing: border-box;
 	padding: 30px;
 	background-color: #ffffff;
 	border-radius: 60px;

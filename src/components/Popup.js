@@ -1,21 +1,25 @@
 class Popup {
 	constructor(popupSelector) {
 		this._popup = document.querySelector(popupSelector);
+		this._popupContainer = this._popup.querySelector('.popup__container');
 	}
 
 	open() {
 		this._popup.classList.add("popup_opened");
+		this._popupContainer.classList.add('popup__container_opened');
 		this._setEventListeners();
 		this._toggleScroll();
 	}
 
 	close() {
 		this._popup.classList.remove("popup_opened");
+		this._popupContainer.classList.remove('popup__container_opened');
 		this._removeEventListeners();
 		this._toggleScroll();
 	}
 
 	_handlePressEsc = (evt) => {
+		evt.preventDefault()
 		if (evt.key === "Escape") {
 			this.close();
 		}

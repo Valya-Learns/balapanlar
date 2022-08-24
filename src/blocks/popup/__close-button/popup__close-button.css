@@ -9,4 +9,11 @@
 	background-size: cover;
 	border: 0;
 	cursor: pointer;
+	will-change: transform;
+	transition: transform 0.9s ease-out, opacity 0.6s ease-out;
+}
+
+.popup__close-button:hover {
+	transform: scale(1.4) rotate(90deg);
+	opacity: 0.4;
 }

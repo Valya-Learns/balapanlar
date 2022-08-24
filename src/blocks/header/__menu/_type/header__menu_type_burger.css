@@ -1,0 +1,5 @@
+.header__menu_type_burger {
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}

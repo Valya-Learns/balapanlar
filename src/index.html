@@ -8,17 +8,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Балапанлар</title>
 	<link rel="icon" type="image/svg" href="./vendor/images/logo-animals.svg" />
-	<link rel="stylesheet" href="./pages/index.css">
-</head>
-
+	</head>
 <body class="body">
 	<div class="page">
 		<header class="header">
 			<div class="logo logo_type_header-animals"></div>
 			<nav>
-				<ul class="header__menu list">
+				<ul class="header__menu header__menu_type_standart list">
 					<li class="header__nav-item">
-						<a href="#courses" class="header__link link">Курсы</a>
+						<a href="#courses" class="header__link link">Наши курсы</a>
 					</li>
 					<li class="header__nav-item">
 						<a href="#courses" class="header__link link">О нас</a>
@@ -93,13 +91,42 @@
 									ещё они научатся:
 								</p>
 								<ul class="course-card__list">
-									<li class="course-card__text">
-										Разбираться в основах алгоритмики
-										и объектно-ориентированного программирования...
+									<li class="course-card__list-item">
+										Разбираться в основах алгоритмики и объектно-ориентированного программирования
+									</li>
+									<li class="course-card__list-item">
+										Разрабатывать графические интерактивные игры для ПК, используя библиотеку PyGame
+									</li>
+									<li class="course-card__list-item">
+										Работать с графикой и использовать библиотеку Turtle
+									</li>
+									<li class="course-card__list-item">
+										Решать реальные задачи, используя Python, и применять итеративный подход
+									</li>
+									<li class="course-card__list-item">
+										Применять принципы проектной работы при создании проектов
+									</li>
+									<li class="course-card__list-item">
+										Писать и читать код на языке Python и работать со структурами данных
+									</li>
+									<li class="course-card__list-item">
+										Разрабатывать сложные игры и приложения для ПК, используя библиотеки PyGame и PyQT
+									</li>
+									<li class="course-card__list-item">
+										Проектировать интерфейсы
+									</li>
+									<li class="course-card__list-item">
+										Автоматизировать работу с графическими файлами
+									</li>
+									<li class="course-card__list-item">
+										Работать в команде и создавать проекты от идеи до их публичной презентации
 									</li>
 								</ul>
 							</div>
-							<a href="#" class="button button_for_courses link">Записаться</a>
+							<div class="course-card__buttons-container">
+								<a href="#" class="button button_for_courses link">Записаться</a>
+								<button type="button" class="course-card__popup-button">Смотреть все навыки</button>
+							</div>
 						</li>
 						<li class="course-card">
 							<h3 class="courses__subtitle">Создание web-сайтов</h3>
@@ -118,7 +145,7 @@
 								<li class="course-card__skills">web-разработка</li>
 								<li class="course-card__skills">основы программирования</li>
 							</ul>
-							<div class="flex-container flex-container__text">
+							<div class="flex-container flex-container_text">
 								<p class="course-card__text">
 									На нашем курсе студенты освоят создание web-сайтов, узнают
 									об отличиях и особенностях платформ, поймут, как работает
@@ -154,7 +181,7 @@
 							<li class="course-card__skills">письмо</li>
 							<li class="course-card__skills">изучение культуры</li>
 						</ul>
-						<div class="flex-container flex-container__text">
+						<div class="flex-container flex-container_text">
 							<p class="course-card__text">
 								Мы запускаем курс для новичков. На нем участники научатся
 								читать, писать и вести диалоги на корейском. Студенты узнают
@@ -184,7 +211,7 @@
 							<li class="course-card__skills">создание резюме</li>
 							<li class="course-card__skills">сленг</li>
 						</ul>
-						<div class="flex-container flex-container__text">
+						<div class="flex-container flex-container_text">
 							<p class="course-card__text">
 								Мы не только учим грамматике, но и смотрим фильмы, привыкаем
 								к сленгу и деловой переписке, читаем статьи и общаемся онлайн
@@ -212,7 +239,7 @@
 							<li class="course-card__skills">работа в команде</li>
 							<li class="course-card__skills">проект</li>
 						</ul>
-						<div class="flex-container flex-container__text">
+						<div class="flex-container flex-container_text">
 							<p class="course-card__text">
 								Cтуденты освоят программы моделирования, сканирования и печати
 								на 3D-принтере. К завершению курса студенты сами напечатают
@@ -223,38 +250,36 @@
 					</li>
 				</ul>
 				<div class="price">
-					<div class="flex-container flex-container_space-between">
-						<h2 class="price__title">Стоимость курсов 3500 руб./мес.</h2>
-						<a href="#" class="button button_for_course-pay link">Оплатить курсы</a>
-					</div>
-					<div class="flex-container flex-container_price">
-						<p class="price__subtitle">Что входит в стоимость?</p>
+					<h2 class="price__title">Стоимость курсов 3500 руб./мес.</h2>
+					<a href="#" class="button button_for_course-pay link">Оплатить курсы</a>
+					<div class="price__column price__column_for_included">
+						<p class="price__subtitle">Что входит в стоимость?</p>
 						<ul class="price__list">
-							<li>2 занятия в неделю по 2 часа</li>
-							<li>Небольшие группы до 10 чел.</li>
-							<li>1 личная консультация в месяц для студентов курсов</li>
-							<li>Снэки, вода, чай на нашей кухне</li>
-							<li>
-								1 консультация для родителей о курсе и достижениях студентов
+							<li class="price__item">2 занятия в неделю по 2 часа</li>
+							<li class="price__item">Небольшие группы до 10 чел.</li>
+							<li class="price__item">1 личная консультация в месяц для студентов курсов</li>
+							<li class="price__item">Снэки, вода, чай на нашей кухне</li>
+							<li class="price__item">
+								1 консультация для родителей о курсе и достижениях студентов
 							</li>
 						</ul>
 					</div>
-					<div class="flex-container flex-container_price">
-						<p class="price__subtitle">Что не входит в стоимость?</p>
+					<div class="price__column price__column_for_not-included">
+						<p class="price__subtitle">Что не входит в стоимость?</p>
 						<ul class="price__list price__list_x">
-							<li>Трансфер из вашего аула к центру</li>
-							<li>Индивидуальные занятия</li>
-							<li>
-								Ежегодный членский взнос в размере 1 500 ₽ (оплачивается
-								раз в год в начале курса)
+							<li class="price__item">Трансфер из вашего аула к центру</li>
+							<li class="price__item">Индивидуальные занятия</li>
+							<li class="price__item">
+								Ежегодный членский взнос в размере 1 500 ₽ (оплачивается
+								раз в год в начале курса)
 							</li>
 						</ul>
 					</div>
 				</div>
 			</section>
-			<section class="about" id="about">
-				<h2 class="section-title">О нас</h2>
-				<p class="section-subtitle">Мы привозим лучшие практики неформального образования для тех, кто не может
+			<section class="about main__section_margin_wide" id="about">
+				<h2 class="section-title">О нас</h2>
+				<p class="section-subtitle">Мы привозим лучшие практики неформального образования для тех, кто не может
 					позволить своим детям полноценно развиваться</p>
 				<div class="about__schools-container">
 					<div class="about__school-item">
@@ -343,26 +368,27 @@
 				<h2 class="partners__title">Наши партнеры</h2>
 				<ul class="partners__container">
 					<li class="partners__partner-item">
-						<a href="#" class="partners__partner-link link">
+						<a href="https://lewibo.org/" class="partners__partner-link link">
 							<img class="partners__partner-logo" src="<%=require('./vendor/images/LWBicon.png')%>" alt="Логотип - лекторы без границ.">
 						</a>
-						<p class="partners__description">Lecturers Without Borders - сообщество молодых учёных со всего мира,
-							которые проводят лекции и мастер-классы для школ. Среди лекторов много учёных из России.
-							Для нас математики из Сорбонны проводили занятия по квази-кристаллам, а в будущем мы планируем привозить
-							лекторов в наш центр.</p>
+						<p class="partners__description">Lecturers Without Borders - сообщество молодых учёных со всего мира,
+							которые проводят лекции и мастер-классы для школ. Среди лекторов много учёных из России.
+							Для&nbsp;нас&nbsp;математики&nbsp;из&nbsp;Сорбонны проводили занятия по квази-кристаллам, а в будущем мы планируем привозить
+							лекторов в наш центр.</p>
 					</li>
 					<li class="partners__partner-item">
-						<a href="#" class="partners__partner-link link">
+						<a href="https://открывая-горизонты.рф/" class="partners__partner-link link">
 							<img class="partners__partner-logo" src="<%=require('./vendor/images/OHicon.png')%>" alt="Логотип - открывая горизонты.">
 						</a>
-						<p class="partners__description">Фонд работает в 45 регионах и с осени 2021 мы их единственные партнёры
-							в Карачаево-Черкесии.
-							Совместно проводим программу профориентации «Поколение Выбор». В 2021–2022 в ней приняли участие 35
-							подростков из 2 школ аула Икон-Халк и посёлка Эркен-Шахар. В сезоне 2022–2023 планируются ещё две школы.
+						<p class="partners__description">Фонд работает в 45 регионах и с осени 2021 мы их единственные партнёры
+							в Карачаево-Черкесии.</p>
+						<p class="partners__description">
+							Совместно проводим программу профориентации «Поколение Выбор». В 2021–2022 в ней приняли участие 35
+							подростков из 2 школ аула Икон-Халк и посёлка Эркен-Шахар. В сезоне 2022–2023 планируются ещё две школы.
 						</p>
 					</li>
 					<li class="partners__partner-item">
-						<a href="#" class="partners__partner-link link">
+						<a href="https://himbio4you.ru/" class="partners__partner-link link">
 							<img class="partners__partner-logo" src="<%=require('./vendor/images/CBicon.png')%>" alt="Логотип - химбио.">
 						</a>
 						<p class="partners__description">ХимБио — онлайн-школа и выездные программы для детей и подростков со всего
@@ -389,14 +415,64 @@
 						<span class="principles__text">Инвестируем в развитие местных специалистов и экспертов</span>
 				</li>
 		</section>
+			<div class="popup popup_type_header">
+				<div class="logo logo_type_header-animals"></div>
+				<ul class="header__menu header__menu_type_burger list">
+					<li class="header__nav-item">
+						<a href="#courses" class="header__link link">Наши курсы</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#courses" class="header__link link">О нас</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#courses" class="header__link link">Команда</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#courses" class="header__link link">Как нас найти</a>
+					</li>
+					<li class="header__nav-item">
+						<a href="#courses" class="header__link link">Поддержать проект</a>
+					</li>
+				</ul>
+				<a href="#" class="button button_for_burger link">Записаться на курсы</a>
+			</div>
+			<button type="button" class="button burger-button">
+				<span class="burger-button__line-element"></span>
+				<span class="burger-button__line-element"></span>
+			</button>
 		</main>
 		<footer class="footer"></footer>
 	</div>
 	<div class="popup popup_type_course">
 		<div class="popup__container popup__container_type_">
 			<div class="popup__content">
+				<h3 class="courses__subtitle">3D технологии</h3>
+						<ul class="flex-container flex-container_info">
+							<li class="flex-container">
+								<img class="course-card__icon" src="./vendor/images/man.svg" alt="черная иконка человека." />
+								<p class="course-card__info">группы 8+ лет</p>
+							</li>
+							<li class="flex-container">
+								<img class="course-card__icon" src="./vendor/images/hourglass.svg"
+									alt="черная иконка песочных часов." />
+								<p class="course-card__info">блоки по 3 месяца</p>
+							</li>
+						</ul>
+						<ul class="flex-container flex-container_skills">
+							<li class="course-card__skills">разговорный язык</li>
+							<li class="course-card__skills">3D печать</li>
+							<li class="course-card__skills">работа в команде</li>
+							<li class="course-card__skills">проект</li>
+						</ul>
+						<div class="flex-container flex-container__text">
+							<p class="course-card__text">
+								Cтуденты освоят программы моделирования, сканирования и печати
+								на 3D-принтере. К завершению курса студенты сами напечатают
+								настоящие предметы.
+							</p>
+						</div>
+						<a href="#" class="button button_for_courses link">Записаться</a>
 			</div>
-			<a href="#" class="button button_for_header link">Записаться</a>
 			<button type="button" class="popup__close-button" aria-label="Закрыть модальное окно."></button>
 		</div>
 	</div>
@@ -404,7 +480,8 @@
 		<div class="popup__container popup__container_type_partner">
 			<div class="popup__content">
 			</div>
-			<a href="#" class="button button_for_partner link">Перейти на сайт партнера</a>
+			<button type="button" class="popup__close-button" aria-label="Закрыть модальное окно."></button>
+			<a href="" class="button button_for_partner link" target="_blank">Перейти на сайт партнера</a>
 		</div>
 	</div>
 		</main>
