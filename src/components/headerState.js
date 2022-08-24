@@ -17,7 +17,7 @@ function setTextLogo() {
 
 function toggleHeaderState() {
 	const scroll = window.pageYOffset;
-	if (scroll > 1 && scroll < 20) {
+	if (scroll > 1) {
 		setTextLogo();
 		firstSection.style.paddingTop = compensatePadding;
 	}
