@@ -2,5 +2,5 @@
 	visibility: visible;
 	will-change: opacity;
 	opacity: 1;
-	transition: visibility 0s, opacity 0.9s;
+	transition: visibility 0s, opacity 0.4s;
 }
