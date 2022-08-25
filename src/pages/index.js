@@ -30,16 +30,11 @@ cards.forEach((card) => {
 
 const popup = new PopupWithCourse(".popup_type_course");
 
-const courseElemts = document.querySelectorAll(".course-card");
-courseElemts.forEach((item) => {
-	item.addEventListener("mousedown", (evt) => {
-		popup.open(item.cloneNode(true).innerHTML);
+document.querySelectorAll(".course-card__popup-button").forEach((btn) => {
+	btn.addEventListener("mousedown", () => {
+		popup.open(btn.closest(".course-card").cloneNode(true).innerHTML);
 	});
 });
-
-// const node = courseElem.cloneNode(true).innerHTML
-// console.log(node)
-// popup.open(node)
 
 const popupPartner = new PopupWithPartner(".popup_type_partner");
 
