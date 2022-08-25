@@ -5,4 +5,5 @@
 	background-position: bottom;
 	border-radius: 300px;
 	object-fit: cover;
+	aspect-ratio: 2;
 }
