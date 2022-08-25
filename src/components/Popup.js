@@ -1,4 +1,5 @@
 import scrollLock from 'scroll-lock';
+const $scrollableElement = document.querySelector('.page')
 
 class Popup {
 	constructor(popupSelector) {
@@ -10,16 +11,14 @@ class Popup {
 		this._popup.classList.add("popup_opened");
 		this._popupContainer.classList.add('popup__container_opened');
 		this._setEventListeners();
-		scrollLock.disablePageScroll();
-		// this._toggleScroll();
+		scrollLock.disablePageScroll($scrollableElement);
 	}
 
 	close() {
 		this._popup.classList.remove("popup_opened");
 		this._popupContainer.classList.remove('popup__container_opened');
 		this._removeEventListeners();
-		scrollLock.enablePageScroll();
-		// this._toggleScroll();
+		scrollLock.enablePageScroll($scrollableElement);
 	}
 
 	_handlePressEsc = (evt) => {
@@ -47,11 +46,6 @@ class Popup {
 		this._popup.removeEventListener("mousedown", this._handlePressClick);
 		document.removeEventListener("keydown", this._handlePressEsc);
 	}
-
-	// _toggleScroll() {
-	// 	const body = document.querySelector(".body");
-	// 	body.classList.toggle("body_no-scroll");
-	// }
 }
 
 export { Popup };
