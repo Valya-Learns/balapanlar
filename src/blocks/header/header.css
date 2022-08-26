@@ -10,3 +10,9 @@
 	padding: 10px 20px;
 	background-color: #ffffff;
 }
+
+@media screen and (max-width: 480px) {
+	.header {
+		padding: 10px 15px;
+	}
+}
