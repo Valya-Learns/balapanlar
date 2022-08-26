@@ -1,5 +1,5 @@
 import scrollLock from 'scroll-lock';
-const $scrollableElement = document.querySelector('.page')
+const $scrollableElement = document.querySelector('.burger-button')
 
 class Popup {
 	constructor(popupSelector) {
