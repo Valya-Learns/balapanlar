@@ -1,5 +1,4 @@
 import scrollLock from 'scroll-lock';
-const $scrollableElement = document.querySelector('.burger-button')
 
 class Popup {
 	constructor(popupSelector) {
@@ -11,14 +10,14 @@ class Popup {
 		this._popup.classList.add("popup_opened");
 		this._popupContainer.classList.add('popup__container_opened');
 		this._setEventListeners();
-		scrollLock.disablePageScroll($scrollableElement);
+		scrollLock.disablePageScroll();
 	}
 
 	close() {
 		this._popup.classList.remove("popup_opened");
 		this._popupContainer.classList.remove('popup__container_opened');
 		this._removeEventListeners();
-		scrollLock.enablePageScroll($scrollableElement);
+		scrollLock.enablePageScroll();
 	}
 
 	_handlePressEsc = (evt) => {
