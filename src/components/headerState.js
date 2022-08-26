@@ -29,7 +29,9 @@ function toggleHeaderState() {
 
 function checkScreenWidth(popup) {
 	const screenWidth = window.innerWidth;
+	console.log(screenWidth);
 	if (screenWidth > tabletWidth) {
+		toggleHeaderState();
 		document.addEventListener('scroll', toggleHeaderState);
 		setAnimalLogo();
 		popup.close();

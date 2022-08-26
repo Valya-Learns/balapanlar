@@ -1,7 +1,7 @@
 .burger-button {
 	position: fixed;
-	top: 9px;
-	right: 15px;
+	top: 25px;
+	right: 75px;
 	z-index: 999;
 	display: none;
 	width: 30px;
@@ -20,5 +20,13 @@
 @media screen and (max-width: 1110px) {
 	.burger-button {
 		display: block;
+	}
+}
+
+
+@media screen and (max-width: 570px) {
+	.burger-button {
+		top: 6px;
+		right: 15px;
 	}
 }

@@ -2,10 +2,8 @@
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	grid-template-columns: 1fr;
-	justify-items: start;
+	justify-items: center;
 	width: 100%;
-
-	/* max-width: 1440px; */
 	min-height: 100vh;
 	color: #000000;
 	font-family: 'Montserrat', sans-serif;

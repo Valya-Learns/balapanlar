@@ -6,7 +6,3 @@
 	overflow-x: hidden;
 	background-color: #eaf0ff;
 }
-
-.body::-webkit-scrollbar {
-	display: none;
-}
