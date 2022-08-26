@@ -5,8 +5,35 @@
 	box-sizing: border-box;
 	width: 100%;
 	padding: 0 50px 10px;
-	background-image: url('../../../vendor/images/intro.jpg');
+	background-image: url('../../../vendor/images/intro-desktop.jpg');
 	background-size: cover;
 	border-radius: 60px;
-	aspect-ratio: 16 / 9.47;
+	aspect-ratio: 1.69 / 1;
+}
+
+@media screen and (max-width: 992px) {
+	.intro__lead {
+		background-image: url('../../../vendor/images/intro-tablet.jpg');
+		aspect-ratio: 248 / 351;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.intro__lead {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.intro__lead {
+		background-image: url('../../../vendor/images/intro-mobile.jpg');
+		aspect-ratio: 40 / 71;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.intro__lead {
+		background-image: url('../../../vendor/images/intro-mobile-2.jpg');
+		aspect-ratio: 160 / 373;
+	}
 }

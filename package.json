@@ -36,13 +36,13 @@
 	"engines": {
 		"node": "^16"
 	},
-
 	"lint-staged": {
 		"*": "npm run test"
 	},
 	"dependencies": {
 		"core-js": "^3.24.1",
 		"gsap": "^3.11.0",
+		"scroll-lock": "^2.1.5",
 		"webpack": "^5.74.0"
 	}
 }
