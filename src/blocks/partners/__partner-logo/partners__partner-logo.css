@@ -1,4 +1,7 @@
 .partners__partner-logo {
 	display: block;
+	margin: 0 auto;
 	object-fit: contain;
+	will-change: transform;
+	transition: transform 0.9s ease-in-out;
 }

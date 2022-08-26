@@ -1,6 +1,14 @@
 .about__schools-container {
 	display: flex;
+	justify-content: center;
 	gap: 10px;
 	box-sizing: border-box;
 	padding: 60px 0 80px;
+}
+
+@media screen and (max-width: 1080px) {
+	.about__schools-container {
+		flex-wrap: wrap;
+		padding-bottom: 0;
+	}
 }

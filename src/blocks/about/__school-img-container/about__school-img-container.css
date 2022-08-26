@@ -1,6 +1,7 @@
 .about__school-img-container {
 	position: relative;
-	width: 595px;
-	height: 524px;
+	width: 100%;
+	max-width: 595px;
+	max-height: 524px;
 	border-radius: 60px;
 }

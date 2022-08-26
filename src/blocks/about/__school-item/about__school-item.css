@@ -1,3 +1,13 @@
 .about__school-item {
 	box-sizing: border-box;
 }
+
+@media screen and (max-width: 1080px) {
+	.about__school-item {
+		margin-bottom: 80px;
+	}
+
+	.about__school-item:last-child {
+		margin-bottom: 0;
+	}
+}

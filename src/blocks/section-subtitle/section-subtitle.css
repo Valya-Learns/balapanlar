@@ -1,4 +1,5 @@
 .section-subtitle {
+	width: 100%;
 	max-width: 1000px;
 	margin: 0;
 	padding-top: 40px;
@@ -6,4 +7,19 @@
 	font-size: 36px;
 	line-height: 44px;
 	letter-spacing: -1px;
+}
+
+@media screen and (max-width: 1080px) {
+	.section-subtitle {
+		max-width: 595px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.section-subtitle {
+		font-size: 30px;
+		line-height: 37px;
+		letter-spacing: -0.5px;
+	}
 }

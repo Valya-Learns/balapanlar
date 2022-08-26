@@ -1,5 +1,9 @@
 .partners__partner-item {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 294px;
+	padding: 0 20px;
 	overflow: hidden;
 	cursor: pointer;
 	will-change: transform;
@@ -8,4 +12,26 @@
 
 .partners__partner-item:hover {
 	transform: scale(1.11);
+}
+
+@media screen and (max-width: 1080px) {
+	.partners__partner-item:hover {
+		transform: scale(1);
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.partners__partner-item {
+		width: 100%;
+		max-width: 294px;
+		padding: 0 0;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.partners__partner-item:hover .partners__partner-logo {
+		will-change: transform;
+		transform: scale(1.07);
+		transition: transform 1.5s ease-in-out;
+	}
 }
