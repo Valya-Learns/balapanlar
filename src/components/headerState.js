@@ -17,11 +17,7 @@ function setTextLogo() {
 
 function toggleHeaderState() {
 	const scroll = window.pageYOffset;
-<<<<<<< HEAD
 	if (scroll > 0) {
-=======
-	if (scroll > 1) {
->>>>>>> e6b97449999ac274327f96cd1908b811a8b98c97
 		setTextLogo();
 		firstSection.style.paddingTop = compensatePadding;
 	}
