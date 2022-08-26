@@ -3,7 +3,7 @@ const headerLogo = header.querySelector(".logo");
 const firstSection = document.getElementsByTagName("section")[0];
 const compensatePadding = "48px";
 const initialPadding = "0";
-const mobileWidth = 744;
+const tabletWidth = 1110;
 
 function setAnimalLogo() {
 	headerLogo.classList.remove("logo_type_header-text");
@@ -29,7 +29,9 @@ function toggleHeaderState() {
 
 function checkScreenWidth(popup) {
 	const screenWidth = window.innerWidth;
-	if (screenWidth > mobileWidth) {
+	console.log(screenWidth);
+	if (screenWidth > tabletWidth) {
+		toggleHeaderState();
 		document.addEventListener('scroll', toggleHeaderState);
 		setAnimalLogo();
 		popup.close();
@@ -37,6 +39,7 @@ function checkScreenWidth(popup) {
 	else {
 		document.removeEventListener('scroll', toggleHeaderState);
 		setTextLogo();
+		firstSection.style.paddingTop = initialPadding;
 	}
 }
 

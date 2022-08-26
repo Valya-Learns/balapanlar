@@ -31,6 +31,7 @@
 @import url('../blocks/telegram-block/__text/telegram-block__text.css');
 @import url('../blocks/intro/__text/intro__text.css');
 @import url('../blocks/main/main.css');
+@import url('../blocks/main/__section/main__section.css');
 @import url('../blocks/main/__section/_margin/main__section_margin_narrow.css');
 @import url('../blocks/main/__section/_margin/main__section_margin_wide.css');
 @import url('../blocks/popup/popup.css');
