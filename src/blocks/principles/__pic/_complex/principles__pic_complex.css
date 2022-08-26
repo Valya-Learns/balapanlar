@@ -1,0 +1,8 @@
+.principles__pic_complex {
+	min-width: 420px;
+	min-height: 210px;
+	background-image: url('../../../../vendor/images/Investing.jpg');
+	background-position: bottom;
+	border-radius: 300px;
+	object-fit: cover;
+}
