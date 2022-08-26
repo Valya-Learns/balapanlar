@@ -3,7 +3,7 @@
 	overflow: hidden;
 	cursor: pointer;
 	will-change: transform;
-	transition: transform 0.9s ease-in-out;
+	transition: transform 0.8s ease-in-out;
 }
 
 .partners__partner-item:hover {
