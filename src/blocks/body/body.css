@@ -6,3 +6,16 @@
 	overflow-x: hidden;
 	background-color: #eaf0ff;
 }
+
+
+body::-webkit-scrollbar {
+	width: 2px;
+}
+
+body::-webkit-scrollbar-track{
+	background: orange;
+}
+
+body::-webkit-scrollbar-thumb{
+	background-color: blue;
+}

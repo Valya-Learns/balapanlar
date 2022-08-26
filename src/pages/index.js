@@ -54,7 +54,7 @@ import "./index.css";
 
 const elem = document.querySelector(".principles");
 
-gsap.to(".principles", {
+const tweenSection = gsap.to(".principles", {
 	xPercent: -66.66666,
 	ease: "none",
 	scrollTrigger: {
@@ -67,7 +67,7 @@ gsap.to(".principles", {
 	},
 });
 
-gsap.to(".principles__heading", {
+const tweenHeading = gsap.to(".principles__heading", {
 	xPercent: 66.66666,
 	ease: "none",
 	scrollTrigger: {
@@ -77,4 +77,14 @@ gsap.to(".principles__heading", {
 		snap: 0.5,
 		end: () => `+=${elem.offsetHeight}`,
 	},
+});
+
+window.addEventListener("resize", () => {
+	if (window.innerWidth <= 992) {
+		tweenHeading.scrollTrigger.disable();
+		tweenSection.scrollTrigger.disable();
+	} else {
+		tweenHeading.scrollTrigger.enable();
+		tweenSection.scrollTrigger.enable();
+	}
 });
