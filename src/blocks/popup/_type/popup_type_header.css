@@ -1,5 +1,5 @@
 .popup_type_header {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	display: flex;
