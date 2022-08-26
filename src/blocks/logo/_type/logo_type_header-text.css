@@ -1,7 +1,35 @@
 .logo_type_header-text {
-	width: 192px;
-	height: 36px;
+	width: 177px;
+	height: 31px;
 	background-image: url('../../../vendor/images/logo-text.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+@media screen and (max-width: 1200px) {
+	.logo_type_header-text {
+		width: 114px;
+		height: 19px;
+	}
+}
+
+@media screen and (max-width: 1110px) {
+	.logo_type_header-text {
+		width: 177px;
+		height: 31px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.logo_type_header-text {
+		width: 165px;
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.logo_type_header-text {
+		width: 100px;
+		height: 18px;
+	}
 }
