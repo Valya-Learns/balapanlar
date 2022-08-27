@@ -22,3 +22,17 @@
 .header__link:hover::after {
 	width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+	.header__link {
+		font-size: 30px;
+		line-height: 37px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.header__link {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}

@@ -1,7 +1,6 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts.css');
 @import url('../blocks/body/body.css');
-@import url('../blocks/body/_no-scroll/body_no-scroll.css');
 @import url('../blocks/page/page.css');
 @import url('../blocks/main/main.css');
 @import url('../blocks/main/__section/main__section.css');
@@ -32,6 +31,7 @@
 @import url('../blocks/telegram-block/__text/telegram-block__text.css');
 @import url('../blocks/intro/__text/intro__text.css');
 @import url('../blocks/main/main.css');
+@import url('../blocks/main/__section/main__section.css');
 @import url('../blocks/main/__section/_margin/main__section_margin_narrow.css');
 @import url('../blocks/main/__section/_margin/main__section_margin_wide.css');
 @import url('../blocks/popup/popup.css');

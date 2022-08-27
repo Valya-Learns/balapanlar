@@ -1,4 +1,5 @@
 .button_for_telegram {
+	flex-shrink: 0;
 	width: 156px;
 	height: 52px;
 	font-weight: 600;
