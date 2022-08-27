@@ -1,9 +1,0 @@
-.principles__pic_container {
-	display: block;
-	min-width: 420px;
-	min-height: 210px;
-	margin-top: 244px;
-	background-image: url('../../../../vendor/images/Investing.jpg');
-	border-radius: 300px;
-	object-fit: cover;
-}

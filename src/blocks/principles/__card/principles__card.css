@@ -4,7 +4,34 @@
 	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
-	height: 100vh;
 	font-size: 60px;
 	line-height: 68px;
+}
+
+@media screen and (max-width: 768px) {
+	.principles__card {
+		padding-bottom: 160px;
+		font-size: 48px;
+		line-height: 58.5px;
+	}
+
+	.principles__card:first-of-type{
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.principles__card {
+		padding-bottom: 60px;
+		font-size: 36px;
+		line-height: 43.9px;
+	}
+
+	.principles__card:first-of-type{
+		margin-top: 30px;
+	}
+
+	.principles__card:last-of-type{
+		padding-bottom: 30px;
+	}
 }
