@@ -11,3 +11,13 @@
 		margin-bottom: 0;
 	}
 }
+
+@media screen and (max-width: 600px) {
+	.about__school-item {
+		margin-bottom: 60px;
+	}
+
+	.about__school-item:last-child {
+		margin-bottom: 0;
+	}
+}

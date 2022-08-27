@@ -3,12 +3,19 @@
 	justify-content: center;
 	gap: 10px;
 	box-sizing: border-box;
-	padding: 60px 0 80px;
+	padding: 80px 0 80px;
 }
 
 @media screen and (max-width: 1080px) {
 	.about__schools-container {
 		flex-wrap: wrap;
+		gap: 0;
 		padding-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.about__schools-container {
+		padding-top: 30px;
 	}
 }

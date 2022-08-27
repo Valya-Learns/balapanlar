@@ -7,13 +7,6 @@
 	letter-spacing: -1px;
 }
 
-@media screen and (max-width: 1080px) {
-	.section-title {
-		max-width: 595px;
-		margin: 0 auto;
-	}
-}
-
 @media screen and (max-width: 600px) {
 	.section-title {
 		font-size: 36px;

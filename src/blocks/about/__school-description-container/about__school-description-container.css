@@ -3,3 +3,9 @@
 	margin: 0 auto;
 	padding-top: 40px;
 }
+
+@media screen and (max-width: 830px) {
+	.about__school-description-container {
+		max-width: 444px;
+	}
+}

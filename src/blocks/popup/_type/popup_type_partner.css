@@ -3,3 +3,9 @@
 		padding: 30px;
 	}
 }
+
+@media screen and (max-width: 800px) {
+	.popup_type_partner {
+		padding: 15px;
+	}
+}

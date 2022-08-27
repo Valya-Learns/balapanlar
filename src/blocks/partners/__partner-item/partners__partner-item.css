@@ -7,7 +7,7 @@
 	overflow: hidden;
 	cursor: pointer;
 	will-change: transform;
-	transition: transform 0.9s ease-in-out;
+	transition: transform 1s ease-in-out;
 }
 
 .partners__partner-item:hover {
@@ -31,7 +31,7 @@
 @media screen and (max-width: 1080px) {
 	.partners__partner-item:hover .partners__partner-logo {
 		will-change: transform;
-		transform: scale(1.07);
-		transition: transform 1.5s ease-in-out;
+		transform: scale(0.95);
+		transition: transform 0.9s ease-in-out;
 	}
 }

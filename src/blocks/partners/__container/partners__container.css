@@ -29,3 +29,9 @@
 		max-width: 290px;
 	}
 }
+
+@media screen and (max-width: 600px) {
+	.partners__container {
+		margin: 30px auto 50px;
+	}
+}

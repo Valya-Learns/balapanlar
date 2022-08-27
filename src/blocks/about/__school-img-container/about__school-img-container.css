@@ -3,5 +3,6 @@
 	width: 100%;
 	max-width: 595px;
 	max-height: 524px;
+	margin: 0 auto;
 	border-radius: 60px;
 }

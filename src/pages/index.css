@@ -71,7 +71,9 @@
 @import url('../blocks/price/__column/_for/price__column_for_included.css');
 @import url('../blocks/price/__column/_for/price__column_for_not-included.css');
 @import url('../blocks/section-title/section-title.css');
+@import url('../blocks/section-title/_type/section-title_type_about.css');
 @import url('../blocks/section-subtitle/section-subtitle.css');
+@import url('../blocks/section-subtitle/_type/section-subtitle_type_about.css');
 @import url('../blocks/about/about.css');
 @import url('../blocks/about/__schools-container/about__schools-container.css');
 @import url('../blocks/about/__school-item/about__school-item.css');
