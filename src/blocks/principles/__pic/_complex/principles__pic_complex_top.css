@@ -1,0 +1,27 @@
+.principles__pic_complex_top {
+	display: block;
+	min-width: 420px;
+	min-height: 210px;
+	margin-top: 244px;
+	background-image: url('../../../../vendor/images/Investing.jpg');
+	border-radius: 300px;
+	aspect-ratio: 2;
+}
+
+
+@media screen and (max-width: 768px) {
+	.principles__pic_complex_top{
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.principles__pic_complex_top {
+		min-width: 230px;
+		max-width: 230px;
+		min-height: 115px;
+		max-height: 115px;
+		background-position: top;
+		background-size: cover;
+	}
+}

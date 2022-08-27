@@ -2,3 +2,18 @@
 	border-radius: 500px;
 	aspect-ratio: 1.4;
 }
+
+@media screen and (max-width: 768px) {
+	.principles__pic_oval {
+		border-radius: 50%;
+		aspect-ratio: 1;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.principles__pic_oval {
+		max-width: 230px;
+		border-radius: 500px;
+		aspect-ratio: 1.4;
+	}
+}

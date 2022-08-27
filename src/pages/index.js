@@ -79,8 +79,16 @@ const tweenHeading = gsap.to(".principles__heading", {
 	},
 });
 
+if (window.innerWidth <= 768) {
+	tweenHeading.scrollTrigger.disable();
+	tweenSection.scrollTrigger.disable();
+} else {
+	tweenHeading.scrollTrigger.enable();
+	tweenSection.scrollTrigger.enable();
+}
+
 window.addEventListener("resize", () => {
-	if (window.innerWidth <= 992) {
+	if (window.innerWidth <= 768) {
 		tweenHeading.scrollTrigger.disable();
 		tweenSection.scrollTrigger.disable();
 	} else {
