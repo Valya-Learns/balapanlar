@@ -1,5 +1,5 @@
 .about__school-description {
-	width: 97%;
+	/* width: 97%; */
 	margin: 0;
 	font-weight: 600;
 	font-size: 24px;
@@ -7,13 +7,13 @@
 	letter-spacing: -0.5px;
 }
 
-@media screen and (max-width: 1080px) {
+/* @media screen and (max-width: 1080px) {
 	.about__school-description {
 		width: 100%;
 	}
-}
+} */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 	.about__school-description {
 		font-size: 18px;
 		line-height: 22px;

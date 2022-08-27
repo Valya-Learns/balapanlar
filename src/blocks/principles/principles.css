@@ -22,6 +22,11 @@
 		align-items: center;
 		width: 100%;
 		height: auto;
-		border-radius: 50px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.principles {
+		border-radius: 30px;
 	}
 }

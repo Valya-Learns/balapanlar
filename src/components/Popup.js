@@ -1,4 +1,5 @@
 import scrollLock from 'scroll-lock';
+// const $scrollableElement = document.querySelector('.popup');
 
 class Popup {
 	constructor(popupSelector) {

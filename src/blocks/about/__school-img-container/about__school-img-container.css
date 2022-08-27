@@ -6,3 +6,9 @@
 	margin: 0 auto;
 	border-radius: 60px;
 }
+
+@media screen and (max-width: 480px) {
+	.about__school-img-container {
+		border-radius: 30px;
+	}
+}
