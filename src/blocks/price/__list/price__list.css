@@ -3,3 +3,9 @@
 	padding: 0 0 18px 30px;
 	list-style-image: url('../../../vendor/images/done.svg');
 }
+
+@media screen and (max-width: 800px) {
+	.price__list {
+		padding-bottom: 0;
+	}
+}
