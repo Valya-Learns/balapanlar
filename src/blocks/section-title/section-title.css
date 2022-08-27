@@ -8,6 +8,13 @@
 	letter-spacing: -1px;
 }
 
+@media screen and (max-width: 800px) {
+	.section-title {
+		font-size: 48px;
+		line-height: 58.51px;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	.section-title {
 		margin-left: 15px;
