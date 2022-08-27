@@ -4,7 +4,7 @@
 	justify-items: center;
 	box-sizing: border-box;
 	width: 100%;
-	padding: 0 50px 10px;
+	padding: 0 75px 10px;
 	background-image: url('../../../vendor/images/intro-desktop.jpg');
 	background-size: cover;
 	border-radius: 60px;
@@ -27,6 +27,7 @@
 @media screen and (max-width: 480px) {
 	.intro__lead {
 		background-image: url('../../../vendor/images/intro-mobile.jpg');
+		border-radius: 30px;
 		aspect-ratio: 40 / 71;
 	}
 }

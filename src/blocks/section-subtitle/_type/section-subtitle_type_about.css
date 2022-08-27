@@ -1,4 +1,4 @@
-@media screen and (max-width: 1080px) {
+/* @media screen and (max-width: 1080px) {
 	.section-subtitle_type_about {
 		padding-top: 20px;
 		font-size: 30px;
@@ -6,9 +6,9 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 	.section-subtitle_type_about {
 		font-size: 24px;
 		line-height: 29px;
 	}
-}
+} */

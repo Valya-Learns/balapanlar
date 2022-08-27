@@ -10,14 +10,14 @@
 	list-style-image: url('../../../vendor/images/done.svg');
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
 	.popup__text-skills {
 		grid-template-columns: minmax(min-content, max-content);
 		row-gap: 30px;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 	.popup__text-skills {
 		grid-template-columns: minmax(min-content, max-content);
 		row-gap: 20px;

@@ -15,15 +15,15 @@
 	aspect-ratio: 300 / 112;
 }
 
-@media screen and (max-width: 1440px) {
+/* @media screen and (max-width: 1440px) {
 	.about__school-title {
 		bottom: 2.08vw;
 		left: 2.08vw;
 		font-size: 3.33vw;
 	}
-}
+} */
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1440px) {
 	.about__school-title {
 		bottom: 2.08vw;
 		left: 2.08vw;
@@ -32,7 +32,7 @@
 	}
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 992px) {
 	.about__school-title {
 		bottom: 3.08vw;
 		left: 3.08vw;
@@ -40,16 +40,16 @@
 	}
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
 	.about__school-title {
 		font-size: 6.33vw;
 	}
 }
 
-@media screen and (max-width: 540px) {
+/* @media screen and (max-width: 480px) {
 	.about__school-title {
 		max-width: 40%;
 		font-size: 5.33vw;
 		line-height: normal;
 	}
-}
+} */

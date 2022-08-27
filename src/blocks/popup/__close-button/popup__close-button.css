@@ -17,3 +17,11 @@
 	transform: scale(1.4) rotate(90deg);
 	opacity: 0.4;
 }
+
+@media screen and (max-width: 768px) {
+	.popup__close-button {
+		top: -35px;
+		right: 15px;
+		background-image: url('../../../vendor/images/close-button_white.svg');
+	}
+}

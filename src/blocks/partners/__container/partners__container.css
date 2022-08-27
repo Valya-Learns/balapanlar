@@ -4,16 +4,16 @@
 	align-items: center;
 	gap: 2px;
 	width: 100%;
-	max-width: 1440px;
+	max-width: 885px;
 	min-height: 239px;
-	margin: 80px 0;
+	margin: 80px auto;
 	padding: 0;
 	list-style-type: none;
 	border: 2px solid #eaf0ff;
 	border-radius: 60px;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
 	.partners__container {
 		flex-wrap: wrap;
 		justify-content: flex-start;
@@ -24,14 +24,14 @@
 	}
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 680px) {
 	.partners__container {
 		max-width: 290px;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 	.partners__container {
-		margin: 30px auto 50px;
+		margin: 30px auto 0;
 	}
 }
