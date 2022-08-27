@@ -20,7 +20,7 @@
 	}
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 660px) {
 	.course-card__buttons-container {
 		flex-direction: column-reverse;
 		align-items: flex-start;

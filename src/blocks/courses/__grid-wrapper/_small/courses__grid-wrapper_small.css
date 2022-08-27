@@ -1,5 +1,6 @@
 .courses__grid-wrapper_small {
 	grid-template-columns: minmax(min-content, 386px) minmax(min-content, 408px) minmax(min-content, 386px);
+	grid-auto-rows: minmax(min-content, max-content);
 	max-width: 1200px;
 	margin: auto;
 	padding: 10px;
@@ -14,5 +15,12 @@
 @media screen and (max-width: 800px) {
 	.courses__grid-wrapper_small {
 		grid-template-columns: 1fr;
+		padding: 10px 30px 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.courses__grid-wrapper_small {
+		padding: 10px;
 	}
 }

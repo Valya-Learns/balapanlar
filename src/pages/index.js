@@ -2,6 +2,7 @@ import { PopupWithCourse } from "../components/PopupWithCourse.js";
 import { PopupWithPartner } from "../components/PopupWithPartner.js";
 import { PopupWithBurger } from "../components/PopupWithBurger.js";
 import { checkScreenWidth } from "../components/headerState.js";
+import "./index.css";
 
 const popupHeader = new PopupWithBurger(".popup_type_header");
 

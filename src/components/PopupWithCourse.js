@@ -14,7 +14,9 @@ export class PopupWithCourse extends Popup {
 		const content = this._popup.querySelector('.popup__content')
 		content.style.display = 'flex';
 		content.innerHTML = nodeElem;
-		content.querySelector('.course-card__popup-button').remove()
+		const btn = content.querySelector('.course-card__popup-button');
+		btn.textContent = 'Закрыть';
+		btn.addEventListener('mousedown', () => super.close())
 		content.querySelector('.flex-container_info').style = 'flex-direction: row';
 		content.querySelector('.flex-container_text').style = 'gap: 30px';
 		content.querySelector('.course-card__list').className = 'popup__text-skills';
