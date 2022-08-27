@@ -2,10 +2,54 @@
 	position: absolute;
 	bottom: 30px;
 	left: 30px;
-	width: 70%;
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	max-width: 400px;
+	max-height: 100%;
 	margin: 0;
 	font-weight: 600;
 	font-size: 48px;
 	line-height: 56px;
 	letter-spacing: -1px;
+	aspect-ratio: 300 / 112;
+}
+
+@media screen and (max-width: 1440px) {
+	.about__school-title {
+		bottom: 2.08vw;
+		left: 2.08vw;
+		font-size: 3.33vw;
+	}
+}
+
+@media screen and (max-width: 1260px) {
+	.about__school-title {
+		bottom: 2.08vw;
+		left: 2.08vw;
+		max-width: 250px;
+		font-size: 3vw;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.about__school-title {
+		bottom: 3.08vw;
+		left: 3.08vw;
+		font-size: 48px;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.about__school-title {
+		font-size: 6.33vw;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.about__school-title {
+		max-width: 40%;
+		font-size: 5.33vw;
+		line-height: normal;
+	}
 }

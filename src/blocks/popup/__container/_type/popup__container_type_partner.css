@@ -1,9 +1,11 @@
 .popup__container_type_partner {
 	display: block;
-
-	/* flex-direction: column;
-	justify-items: center;
-	justify-content: center; */
 	max-width: 885px;
 	padding: 40px 42px;
+}
+
+@media screen and (max-width: 745px) {
+	.popup__container_type_partner {
+		padding: 30px 15px;
+	}
 }

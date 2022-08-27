@@ -1,11 +1,37 @@
 .partners__partner-item {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 294px;
+	padding: 0 20px;
 	overflow: hidden;
 	cursor: pointer;
 	will-change: transform;
-	transition: transform 0.8s ease-in-out;
+	transition: transform 1s ease-in-out;
 }
 
 .partners__partner-item:hover {
 	transform: scale(1.11);
+}
+
+@media screen and (max-width: 1080px) {
+	.partners__partner-item:hover {
+		transform: scale(1);
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.partners__partner-item {
+		width: 100%;
+		max-width: 294px;
+		padding: 0 0;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.partners__partner-item:hover .partners__partner-logo {
+		will-change: transform;
+		transform: scale(0.95);
+		transition: transform 0.9s ease-in-out;
+	}
 }

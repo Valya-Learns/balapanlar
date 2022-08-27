@@ -71,7 +71,9 @@
 @import url('../blocks/price/__column/_for/price__column_for_included.css');
 @import url('../blocks/price/__column/_for/price__column_for_not-included.css');
 @import url('../blocks/section-title/section-title.css');
+@import url('../blocks/section-title/_type/section-title_type_about.css');
 @import url('../blocks/section-subtitle/section-subtitle.css');
+@import url('../blocks/section-subtitle/_type/section-subtitle_type_about.css');
 @import url('../blocks/about/about.css');
 @import url('../blocks/about/__schools-container/about__schools-container.css');
 @import url('../blocks/about/__school-item/about__school-item.css');
@@ -91,6 +93,7 @@
 @import url('../blocks/partners/__container/partners__container.css');
 @import url('../blocks/partners/__partner-item/partners__partner-item.css');
 @import url('../blocks/partners/__partner-link/partners__partner-link.css');
+@import url('../blocks/partners/__logo-container/partners__logo-container.css');
 @import url('../blocks/partners/__partner-logo/partners__partner-logo.css');
 @import url('../blocks/partners/__description/partners__description.css');
 @import url('../blocks/burger-button/burger-button.css');
