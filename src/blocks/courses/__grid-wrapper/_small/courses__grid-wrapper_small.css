@@ -1,5 +1,4 @@
 .courses__grid-wrapper_small {
-	/* grid-template-columns: minmax(min-content, 386px) minmax(min-content, 408px) minmax(min-content, 386px); */
 	grid-template-columns: repeat(auto-fit, minmax(388px, 1fr));
 	grid-auto-rows: minmax(563px, 1fr);
 	max-width: 1200px;

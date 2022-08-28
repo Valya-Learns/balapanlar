@@ -1,6 +1,4 @@
 .flex-container_skills {
-	/* column-gap: 5px;
-	row-gap: 6px; */
 	gap: 5px;
 	list-style: none;
 }

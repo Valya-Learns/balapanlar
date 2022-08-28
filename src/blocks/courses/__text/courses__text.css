@@ -4,13 +4,13 @@
 	text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 	.courses__text {
 		margin-top: 15px;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 	.courses__text {
 		margin: 10px 0;
 	}

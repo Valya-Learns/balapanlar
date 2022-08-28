@@ -1,6 +1,4 @@
 .about__schools-container {
-	/* display: flex;
-	justify-content: center; */
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
 	gap: 10px;

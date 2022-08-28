@@ -1,5 +1,4 @@
 import scrollLock from 'scroll-lock';
-// const $scrollableElement = document.querySelector('.popup');
 
 class Popup {
 	constructor(popupSelector) {
@@ -31,6 +30,7 @@ class Popup {
 	_handlePressClick = (evt) => {
 		if (
 			evt.target.classList.contains("popup_opened") ||
+			evt.target.classList.contains("button") ||
 			evt.target.classList.contains("popup__close-button")
 		) {
 			this.close();

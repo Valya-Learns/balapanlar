@@ -7,7 +7,7 @@
 	letter-spacing: -1px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 	.courses__subtitle {
 		font-size: 30px;
 		line-height: 36.67px;
@@ -15,7 +15,7 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 	.courses__subtitle {
 		font-size: 24px;
 		line-height: 29.26px;
