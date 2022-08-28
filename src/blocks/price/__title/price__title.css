@@ -8,7 +8,7 @@
 	letter-spacing: -1px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 	.price__title {
 		font-size: 30px;
 		line-height: 36.57px;
@@ -16,7 +16,7 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 	.price__title {
 		font-size: 24px;
 		line-height: 29.26px;

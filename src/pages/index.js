@@ -1,19 +1,9 @@
+import "./index.css";
 import { PopupWithCourse } from "../components/PopupWithCourse.js";
 import { PopupWithPartner } from "../components/PopupWithPartner.js";
 import { PopupWithBurger } from "../components/PopupWithBurger.js";
 import { checkScreenWidth } from "../components/headerState.js";
-import "./index.css";
-
-const popupHeader = new PopupWithBurger(".popup_type_header");
-
-checkScreenWidth(popupHeader);
-
-window.addEventListener("resize", () => checkScreenWidth(popupHeader));
-
-popupHeader.burgerButton.addEventListener(
-	"mousedown",
-	popupHeader.toggleBurgerMenu
-);
+import { toggleTween } from "../components/tween.js";
 
 const cards = document.querySelectorAll(".course-card");
 
@@ -28,6 +18,17 @@ cards.forEach((card) => {
 		}
 	}
 });
+
+const popupHeader = new PopupWithBurger(".popup_type_header");
+
+checkScreenWidth(popupHeader);
+
+window.addEventListener("resize", () => checkScreenWidth(popupHeader));
+
+popupHeader.burgerButton.addEventListener(
+	"mousedown",
+	popupHeader.toggleBurgerMenu
+);
 
 const popup = new PopupWithCourse(".popup_type_course");
 
@@ -46,54 +47,6 @@ partners.forEach((partner) => {
 	});
 });
 
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+toggleTween();
 
-gsap.registerPlugin(ScrollTrigger);
-
-import "./index.css";
-
-const elem = document.querySelector(".principles");
-
-const tweenSection = gsap.to(".principles", {
-	xPercent: -66.66666,
-	ease: "none",
-	scrollTrigger: {
-		trigger: ".principles",
-		pin: true,
-		start: "top top",
-		scrub: 1,
-		snap: 0.5,
-		end: () => `+=${elem.offsetHeight}`,
-	},
-});
-
-const tweenHeading = gsap.to(".principles__heading", {
-	xPercent: 66.66666,
-	ease: "none",
-	scrollTrigger: {
-		trigger: ".principles",
-		start: "top top",
-		scrub: 1,
-		snap: 0.5,
-		end: () => `+=${elem.offsetHeight}`,
-	},
-});
-
-if (window.innerWidth <= 768) {
-	tweenHeading.scrollTrigger.disable();
-	tweenSection.scrollTrigger.disable();
-} else {
-	tweenHeading.scrollTrigger.enable();
-	tweenSection.scrollTrigger.enable();
-}
-
-window.addEventListener("resize", () => {
-	if (window.innerWidth <= 768) {
-		tweenHeading.scrollTrigger.disable();
-		tweenSection.scrollTrigger.disable();
-	} else {
-		tweenHeading.scrollTrigger.enable();
-		tweenSection.scrollTrigger.enable();
-	}
-});
+window.addEventListener("resize", toggleTween);

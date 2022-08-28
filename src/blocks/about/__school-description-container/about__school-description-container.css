@@ -1,8 +1,5 @@
 .about__school-description-container {
 	max-width: 550px;
-	margin-right: 0;
-
-	/* margin: 0 auto; */
 	margin-left: 30px;
 	padding-top: 40px;
 }
@@ -16,11 +13,6 @@
 @media screen and (max-width: 768px) {
 	.about__school-description-container {
 		max-width: 444px;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.about__school-description-container {
 		padding-top: 30px;
 	}
 }
