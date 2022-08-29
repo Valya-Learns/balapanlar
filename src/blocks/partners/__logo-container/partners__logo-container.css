@@ -13,7 +13,7 @@
 	}
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
 	.partners__logo-container {
 		border: 2px solid #eaf0ff;
 		will-change: border;
