@@ -7,7 +7,7 @@
 	background-size: contain;
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1300px) {
 	.logo_type_header-animals {
 		margin-right: 0;
 	}
