@@ -33,7 +33,7 @@ class Popup {
 			evt.target.classList.contains("button") ||
 			evt.target.classList.contains("popup__close-button")
 		) {
-			this.close();
+			setTimeout(() => {this.close()}, 100);
 		}
 	};
 
