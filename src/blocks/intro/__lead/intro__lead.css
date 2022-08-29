@@ -18,6 +18,13 @@
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.intro__lead {
+		border-radius: 50px;
+	}
+}
+
+
 @media screen and (max-width: 570px) {
 	.intro__lead {
 		padding: 0;
@@ -27,7 +34,7 @@
 @media screen and (max-width: 480px) {
 	.intro__lead {
 		background-image: url('../../../vendor/images/intro-mobile.jpg');
-		border-radius: 30px;
+		border-radius: 40px;
 		aspect-ratio: 40 / 71;
 	}
 }
