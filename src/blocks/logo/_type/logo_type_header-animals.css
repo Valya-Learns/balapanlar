@@ -1,10 +1,11 @@
 .logo_type_header-animals {
+	display: block;
 	width: 105px;
 	height: 100px;
 	margin-right: 115px;
 	background-image: url('../../../vendor/images/logo-animals.svg');
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 }
 
 @media screen and (max-width: 1300px) {
@@ -13,10 +14,11 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1110px) {
 	.logo_type_header-animals {
-		width: 150px;
-		height: 143px;
+		width: 155px;
+		height: 148px;
+		margin-bottom: 60px;
 	}
 }
 
@@ -24,5 +26,6 @@
 	.logo_type_header-animals {
 		width: 105px;
 		height: 100px;
+		margin-bottom: 30px;
 	}
 }

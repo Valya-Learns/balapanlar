@@ -5,15 +5,17 @@
 	box-sizing: border-box;
 	width: 100%;
 	padding: 0 75px 10px;
-	background-image: url('../../../vendor/images/intro-desktop.jpg');
-	background-size: cover;
+	background-image: url('../../../vendor/images/intro.jpg');
+	background-position: 63% 73%;
+	background-size: 157%;
 	border-radius: 60px;
 	aspect-ratio: 1.69 / 1;
 }
 
 @media screen and (max-width: 992px) {
 	.intro__lead {
-		background-image: url('../../../vendor/images/intro-tablet.jpg');
+		background-position: 59% 35%;
+		background-size: 220%;
 		aspect-ratio: 248 / 351;
 	}
 }
@@ -33,15 +35,15 @@
 
 @media screen and (max-width: 480px) {
 	.intro__lead {
-		background-image: url('../../../vendor/images/intro-mobile.jpg');
+		background-position: 59% -30%;
+		background-size: 340%;
 		border-radius: 40px;
-		aspect-ratio: 40 / 71;
+		aspect-ratio: 2 / 5;
 	}
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 320px) {
 	.intro__lead {
-		background-image: url('../../../vendor/images/intro-mobile-2.jpg');
-		aspect-ratio: 160 / 373;
+		background-size: 310%;
 	}
 }
