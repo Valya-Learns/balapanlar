@@ -10,7 +10,7 @@
 	border-top-right-radius: 60px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
 	.about {
 		padding: 80px 75px 0;
 	}
