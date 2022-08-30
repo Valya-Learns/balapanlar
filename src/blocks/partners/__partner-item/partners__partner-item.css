@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-sizing: border-box;
 	width: 294px;
 	overflow: hidden;
 	cursor: pointer;
@@ -13,7 +14,7 @@
 	transform: scale(1.11);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
 	.partners__partner-item:hover {
 		transform: scale(0.95);
 	}
