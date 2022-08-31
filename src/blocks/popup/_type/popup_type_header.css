@@ -8,7 +8,7 @@
 	align-items: center;
 	box-sizing: border-box;
 	width: 100%;
-	min-height: min-content;
+	height: min-content;
 	padding: 20px 0 40px 5px;
 	background-color: #ffffff;
 	border-radius: 30px;
