@@ -19,6 +19,10 @@
 		will-change: border;
 		transition: border 1s ease-in-out;
 	}
+
+	.partners__logo-container:hover {
+		border: 4px solid #eaf0ff;
+	}
 }
 
 @media screen and (max-width: 480px) {

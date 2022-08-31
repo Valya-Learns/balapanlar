@@ -19,10 +19,8 @@
 @import url('../blocks/intro/intro.css');
 @import url('../blocks/intro/__lead/intro__lead.css');
 @import url('../blocks/intro/__title/intro__title.css');
-@import url('../blocks/intro/__text-container/intro__text-container.css');
 @import url('../blocks/intro/__text/intro__text.css');
 @import url('../blocks/button/_for/button_for_lead.css');
-@import url('../blocks/button/_for/button_for_telegram.css');
 @import url('../blocks/button/_for/button_for_partner.css');
 @import url('../blocks/button/_for/button_for_courses.css');
 @import url('../blocks/button/_for/button_for_course-pay.css');
@@ -34,7 +32,6 @@
 @import url('../blocks/main/main.css');
 @import url('../blocks/main/__section/main__section.css');
 @import url('../blocks/main/__section/_margin/main__section_margin_narrow.css');
-@import url('../blocks/main/__section/_margin/main__section_margin_wide.css');
 @import url('../blocks/popup/popup.css');
 @import url('../blocks/popup/__container/popup__container.css');
 @import url('../blocks/popup/__container/_opened/popup__container_opened.css');

@@ -5,6 +5,12 @@
 	list-style-type: none;
 }
 
+@media screen and (max-width: 903px) {
+	.about__school-options {
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	.about__school-options {
 		padding-top: 30px;
