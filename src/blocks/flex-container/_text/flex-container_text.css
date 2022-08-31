@@ -5,3 +5,9 @@
 	align-items: flex-start;
 	gap: 15px;
 }
+
+@media screen and (max-width: 768px) {
+	.flex-container_text {
+		gap: 30px;
+	}
+}
