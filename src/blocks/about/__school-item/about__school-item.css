@@ -5,7 +5,7 @@
 
 @media screen and (max-width: 992px) {
 	.about__school-item {
-		margin-bottom: 80px;
+		margin-bottom: 70px;
 	}
 
 	.about__school-item:last-child {
@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 480px) {
 	.about__school-item {
-		margin-bottom: 60px;
+		margin-bottom: 50px;
 	}
 
 	.about__school-item:last-child {

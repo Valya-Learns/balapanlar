@@ -17,28 +17,19 @@
 
 @media screen and (max-width: 1439px) {
 	.about__school-title {
-		bottom: 2.08vw;
-		left: 3.08vw;
-		max-width: 250px;
-		font-size: 3.5vw;
-	}
-}
-
-@media screen and (max-width: 992px) {
-	.about__school-title {
-		bottom: 3.08vw;
-		left: 3.08vw;
-		font-size: 40px;
-		line-height: 49px;
-	}
-}
-
-@media screen and (max-width: 770px) {
-	.about__school-title {
 		bottom: 1.08vw;
 		left: 2.08vw;
+		max-width: 250px;
 		font-size: 3.3vw;
-		line-height: 36px;
+	}
+}
+
+@media screen and (max-width: 903px) {
+	.about__school-title {
+		bottom: 4.05vw;
+		left: 4.08vw;
+		font-size: 5.3vw;
+		line-height: 49px;
 	}
 }
 
@@ -47,7 +38,6 @@
 		bottom: 3.08vw;
 		left: 3.08vw;
 		font-size: 40px;
-		line-height: 49px;
 	}
 }
 
