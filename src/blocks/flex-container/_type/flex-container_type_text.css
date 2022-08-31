@@ -1,4 +1,4 @@
-.flex-container_text {
+.flex-container_type_text {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 768px) {
-	.flex-container_text {
+	.flex-container_type_text {
 		gap: 30px;
 	}
 }

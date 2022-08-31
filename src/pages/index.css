@@ -31,7 +31,6 @@
 @import url('../blocks/telegram-block/__text/telegram-block__text.css');
 @import url('../blocks/main/main.css');
 @import url('../blocks/main/__section/main__section.css');
-@import url('../blocks/main/__section/_margin/main__section_margin_narrow.css');
 @import url('../blocks/popup/popup.css');
 @import url('../blocks/popup/__container/popup__container.css');
 @import url('../blocks/popup/__container/_opened/popup__container_opened.css');
@@ -49,9 +48,9 @@
 @import url('../blocks/course-card/course-card.css');
 @import url('../blocks/course-card/__icon/course-card__icon.css');
 @import url('../blocks/flex-container/flex-container.css');
-@import url('../blocks/flex-container/_skills/flex-container_skills.css');
-@import url('../blocks/flex-container/_info/flex-container_info.css');
-@import url('../blocks/flex-container/_text/flex-container_text.css');
+@import url('../blocks/flex-container/_type/flex-container_type_skills.css');
+@import url('../blocks/flex-container/_type/flex-container_type_info.css');
+@import url('../blocks/flex-container/_type/flex-container_type_text.css');
 @import url('../blocks/course-card/__info/course-card__info.css');
 @import url('../blocks/course-card/__skills/course-card__skills.css');
 @import url('../blocks/course-card/__text/course-card__text.css');

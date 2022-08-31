@@ -20,13 +20,6 @@
 	}
 }
 
-@media screen and (max-width: 768px) {
-	.course-card__buttons-container {
-		flex-direction: row;
-		align-items: center;
-	}
-}
-
 @media screen and (max-width: 660px) {
 	.course-card__buttons-container {
 		flex-direction: column-reverse;
