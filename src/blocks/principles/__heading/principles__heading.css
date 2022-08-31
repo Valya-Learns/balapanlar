@@ -1,8 +1,9 @@
 .principles__heading {
 	position: absolute;
-	top: 80px;
+	top: 160px;
 	left: 12.8%;
 	width: 100%;
+	margin: 0;
 	margin-left: auto;
 	font-size: 36px;
 	line-height: 44px;
