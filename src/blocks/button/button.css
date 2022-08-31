@@ -1,43 +1,47 @@
 .button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width: min-content;
+	height: min-content;
+	padding: 16px 22px;
 	color: #ffffff;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	white-space: nowrap;
 	background-color: #252525;
 	border-radius: 50px;
 }
 
 .button:hover {
-	background-color: #333333;
-	animation: cycle 2s ease-in-out forwards;
+	background-color: #353535;
+	animation: swing 2s ease-in-out forwards;
 }
 
 .button:active {
 	border: 0;
 }
 
-@keyframes cycle {
+@keyframes swing {
 	0% {
-		transform: rotate(0) translate(0, 0);
+		transform: rotate(0);
 	}
 
 	20% {
-		transform: rotate(2deg) translate(0, -2px);
+		transform: rotate(1deg);
 	}
 
 	40% {
-		transform: rotate(-2deg) translate(0, -2px);
+		transform: rotate(-1deg);
 	}
 
 	60% {
-		transform: rotate(2deg) translate(0, -2px);
+		transform: rotate(1deg);
 	}
 
 	80% {
-		transform: rotate(-2deg) translate(0, -2px);
+		transform: rotate(-1deg);
 	}
 
 	100% {
-		transform: rotate(0) translate(0, -2px);
+		transform: rotate(0);
 	}
 }

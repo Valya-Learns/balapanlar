@@ -5,3 +5,10 @@
 	will-change: transform;
 	transition: transform 0.9s ease-in-out;
 }
+
+
+@media screen and (max-width: 992px) {
+	.partners__partner-logo:hover {
+		transform: scale(0.95);
+	}
+}

@@ -7,7 +7,7 @@
 	text-align: center;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
 	.partners__title {
 		font-size: 30px;
 		line-height: 37px;

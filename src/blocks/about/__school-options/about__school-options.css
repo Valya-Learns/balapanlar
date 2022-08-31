@@ -5,7 +5,7 @@
 	list-style-type: none;
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 480px) {
 	.about__school-options {
 		padding-top: 30px;
 	}

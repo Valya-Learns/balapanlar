@@ -1,20 +1,19 @@
 .about__schools-container {
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(416px, 1fr));
 	gap: 10px;
 	box-sizing: border-box;
-	padding: 80px 0 80px;
+	padding: 60px 0 80px;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
 	.about__schools-container {
-		flex-wrap: wrap;
-		gap: 0;
-		padding-bottom: 0;
+		grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+		padding: 80px 0 80px;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 	.about__schools-container {
 		padding-top: 30px;
 	}

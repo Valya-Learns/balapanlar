@@ -4,7 +4,7 @@
 	justify-items: center;
 	box-sizing: border-box;
 	width: 100%;
-	padding: 0 50px 10px;
+	padding: 0 75px 10px;
 	background-image: url('../../../vendor/images/intro-desktop.jpg');
 	background-size: cover;
 	border-radius: 60px;
@@ -18,6 +18,13 @@
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.intro__lead {
+		border-radius: 50px;
+	}
+}
+
+
 @media screen and (max-width: 570px) {
 	.intro__lead {
 		padding: 0;
@@ -27,6 +34,7 @@
 @media screen and (max-width: 480px) {
 	.intro__lead {
 		background-image: url('../../../vendor/images/intro-mobile.jpg');
+		border-radius: 40px;
 		aspect-ratio: 40 / 71;
 	}
 }

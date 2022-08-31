@@ -4,7 +4,7 @@
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 	.popup_type_partner {
 		padding: 15px;
 	}

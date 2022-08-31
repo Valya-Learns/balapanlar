@@ -4,7 +4,7 @@
 	list-style-image: url('../../../vendor/images/done.svg');
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 	.price__list {
 		padding-bottom: 0;
 	}
