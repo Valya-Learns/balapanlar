@@ -1,8 +1,14 @@
 .about__school-options {
 	width: 92%;
-	margin: 0;
+	margin: 0 0 0 30px;
 	padding: 40px 0 0;
 	list-style-type: none;
+}
+
+@media screen and (max-width: 1200px) {
+	.about__school-options {
+		margin-left: 0;
+	}
 }
 
 @media screen and (max-width: 903px) {
