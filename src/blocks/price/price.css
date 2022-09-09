@@ -10,7 +10,6 @@
 	padding: 30px;
 	column-gap: 50px;
 	background-color: #d0ddff;
-	border-radius: 60px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -41,6 +40,5 @@
 		row-gap: 20px;
 		margin: 0 10px 80px;
 		padding: 15px;
-		border-radius: 30px;
 	}
 }

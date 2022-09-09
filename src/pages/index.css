@@ -3,6 +3,10 @@
 @import url('../blocks/body/body.css');
 @import url('../blocks/page/page.css');
 @import url('../blocks/main/main.css');
+@import url('../blocks/border-radius/border-radius.css');
+@import url('../blocks/border-radius/border-radius_size-l.css');
+@import url('../blocks/border-radius/border-radius_size-m.css');
+@import url('../blocks/border-radius/border-radius_size-s.css');
 @import url('../blocks/main/__section/main__section.css');
 @import url('../blocks/header/header.css');
 @import url('../blocks/logo/_type/logo_type_header-animals.css');
