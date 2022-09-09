@@ -13,6 +13,7 @@
 
 .button:hover {
 	background-color: #353535;
+	will-change: animation;
 	animation: swing 2s ease-in-out forwards;
 }
 

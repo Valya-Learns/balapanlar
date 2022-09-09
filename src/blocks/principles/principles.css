@@ -7,7 +7,6 @@
 	overflow: hidden;
 	color: #ffffff;
 	background-color: #ae46ff;
-	border-radius: 50px;
 }
 
 @media screen and (min-height: 1200px) {
@@ -25,8 +24,3 @@
 	}
 }
 
-@media screen and (max-width: 480px) {
-	.principles {
-		border-radius: 30px;
-	}
-}
