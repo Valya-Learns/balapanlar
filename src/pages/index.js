@@ -3,7 +3,7 @@ import { PopupWithCourse } from "../components/PopupWithCourse.js";
 import { PopupWithPartner } from "../components/PopupWithPartner.js";
 import { PopupWithBurger } from "../components/PopupWithBurger.js";
 import { checkScreenWidth } from "../components/headerState.js";
-import { toggleTween } from "../components/tween.js";
+import { Tween } from "../components/tween.js";
 import { scrollToAnchor } from "../utils.js/anchorLinkScroll.js";
 
 const cards = document.querySelectorAll(".course-card");
@@ -48,8 +48,31 @@ partners.forEach((partner) => {
 	});
 });
 
-toggleTween();
+const principlesTweenData = {
+	selector: ".principles",
+	horizontalShift: -66.66666666,
+	triggerSelector: ".principles",
+	pinState: true,
+	tabletWidth: 768,
+};
 
-window.addEventListener("resize", toggleTween);
+const principlesHeadingTweenData = {
+	selector: ".principles__heading",
+	horizontalShift: 66.66666666,
+	triggerSelector: ".principles",
+	pinState: false,
+	tabletWidth: 768,
+};
 
-document.querySelectorAll('[data-attribute-anchor]').forEach( (link) => scrollToAnchor(link));
+const principlesTween = new Tween(principlesTweenData);
+const principlesHeadingTween = new Tween(principlesHeadingTweenData);
+
+principlesTween.toggleTween();
+principlesHeadingTween.toggleTween();
+
+window.addEventListener("resize", principlesTween.toggleTween);
+window.addEventListener("resize", principlesHeadingTween.toggleTween);
+
+document
+	.querySelectorAll("[data-attribute-anchor]")
+	.forEach((link) => scrollToAnchor(link));
