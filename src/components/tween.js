@@ -3,43 +3,30 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const elem = document.querySelector(".principles");
-
-const tweenSection = gsap.to(".principles", {
-	xPercent: -66.66666,
-	ease: "none",
-	scrollTrigger: {
-		trigger: ".principles",
-		pin: true,
-		start: "top top",
-		scrub: 1,
-		snap: 0.5,
-		end: () => `+=${elem.offsetHeight}`,
-	},
-});
-
-const tweenHeading = gsap.to(".principles__heading", {
-	xPercent: 66.66666,
-	ease: "none",
-	scrollTrigger: {
-		trigger: ".principles",
-		start: "top top",
-		scrub: 1,
-		snap: 0.5,
-		end: () => `+=${elem.offsetHeight}`,
-	},
-});
-
-const tabletWidth = 768;
-
-const toggleTween = () => {
-	if (window.innerWidth <= tabletWidth) {
-		tweenHeading.scrollTrigger.disable();
-		tweenSection.scrollTrigger.disable();
-	} else {
-		tweenHeading.scrollTrigger.enable();
-		tweenSection.scrollTrigger.enable();
+class Tween {
+	constructor(tweenData) {
+		this.data = tweenData;
+		this.tween = gsap.to(tweenData.selector, {
+			xPercent: tweenData.horizontalShift,
+			ease: "none",
+			scrollTrigger: {
+				trigger: this.data.triggerSelector,
+				pin: tweenData.pinState,
+				start: "top top",
+				scrub: 1,
+				snap: 0.5,
+				end: "bottom",
+			},
+		});
 	}
+
+	toggleTween = () => {
+		if (window.innerWidth <= this.data.tabletWidth) {
+			this.tween.scrollTrigger.disable();
+		} else {
+			this.tween.scrollTrigger.enable();
+		}
+	};
 }
 
-export { toggleTween }
+export { Tween };
