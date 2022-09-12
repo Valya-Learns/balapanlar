@@ -14,3 +14,10 @@
 		margin-top: 0;
 	}
 }
+
+@media screen and (max-width: 480px) {
+	.principles__pic {
+		max-width: 230px;
+		background-size: cover;
+	}
+}
