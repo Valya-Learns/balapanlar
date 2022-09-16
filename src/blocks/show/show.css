@@ -1,0 +1,7 @@
+.show {
+	outline: 1px #0076fd solid;
+}
+
+.show * {
+	outline: 1px #0076fd solid;
+}

@@ -22,8 +22,8 @@
 	},
 	"scripts": {
 		"editorconfig": "editorconfig-cli",
-		"stylelint": "stylelint \"src/**/*.css\"",
 		"stylelint:fixed": "stylelint \"src/**/*.css\" --fix",
+		"stylelint": "stylelint \"src/**/*.css\"",
 		"test": "npm run editorconfig && npm run stylelint",
 		"prepare": "husky install",
 		"staged": "lint-staged",
