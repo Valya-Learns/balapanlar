@@ -1,7 +1,19 @@
 .parents__reasons {
   list-style-type: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 292px);
+  grid-template-rows: repeat(2, 277px);
+  gap: 10px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 1300px) {
+  .parents__reasons {
+    grid-template-columns: repeat(auto-fit, 292px);
+  grid-template-rows: repeat(auto-fit, 277px);
+  
+  }
 }

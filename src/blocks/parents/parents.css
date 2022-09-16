@@ -1,4 +1,5 @@
 .parents {
+  margin: 0 0 0 200%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -8,9 +9,9 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1000px) {
   .parents {
-    padding-top: 80px;
+    padding-top: 40px;
   }
 }
 
