@@ -2,6 +2,12 @@
 	"plugins": [
 		"stylelint-order"
 	],
+	"scripts": {
+    "stylelint-check": "stylelint-config-prettier-check"
+  },
+	"extends": [
+    "stylelint-config-prettier"
+  ],
 	"rules": {
 		"color-no-invalid-hex": true,
 		"font-family-no-duplicate-names": true,
@@ -404,4 +410,6 @@
 			"stroke-width"
 		]
 	}
+
 }
+

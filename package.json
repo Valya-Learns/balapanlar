@@ -16,6 +16,7 @@
 		"mini-css-extract-plugin": "^2.6.1",
 		"postcss-loader": "^7.0.1",
 		"stylelint": "14.0.0",
+		"stylelint-config-prettier": "^9.0.3",
 		"stylelint-order": "5.0.0",
 		"webpack-cli": "^4.10.0",
 		"webpack-dev-server": "^4.10.0"
@@ -30,7 +31,8 @@
 		"build": "webpack --mode production",
 		"dev": "webpack serve",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist"
+		"deploy": "gh-pages -d dist",
+		"fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' "
 	},
 	"editorconfig-cli": [
 		"*.json",
