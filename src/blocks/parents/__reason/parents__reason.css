@@ -1,0 +1,8 @@
+.parents__reason {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  max-width: 292px;
+  
+}

@@ -1,0 +1,23 @@
+.parents {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 109px 0 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 990px) {
+  .parents {
+    padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .parents {
+    padding: 30px 15px 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+}
