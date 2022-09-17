@@ -9,4 +9,14 @@
   align-items: center;
 }
 
-/*121px*/
+@media screen and (max-width: 1300px) {
+  .parents__container {
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .parents__container {
+    padding-bottom: 30px;
+  }
+}
