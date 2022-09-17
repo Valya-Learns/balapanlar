@@ -8,3 +8,10 @@
 	opacity: 0;
 	transition: 0.3s linear 0s;
 }
+
+@media screen and (max-width: 990px) {
+	.questions__text {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}

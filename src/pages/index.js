@@ -89,10 +89,9 @@ const openCloseAnswer = (answers) => {
 
 // функция, которая меняет в кнопке раскрытия + на -
 const changeIcon = (openButton) => {
-	if (openButton.textContent === "+") {
-		openButton.textContent = "-"
-	} else { openButton.textContent = "+" };
-}
+	(openButton.textContent === "+") ? openButton.textContent = "-" : openButton.textContent = "+"
+};
+
 
 // функция, изменяющая состояние области ответа
 const changeStatusOfAnswer = (openButton) => {

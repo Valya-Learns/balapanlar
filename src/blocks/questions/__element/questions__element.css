@@ -15,3 +15,9 @@
 .questions__element:nth-child(even) {
 	background-color: rgba(240, 244, 255, 1);
 }
+
+@media screen and (max-width: 480px) {
+	.questions__element {
+		gap: 5px;
+	}
+}
