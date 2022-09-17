@@ -64,14 +64,36 @@ const principlesHeadingTweenData = {
 	tabletWidth: 768,
 };
 
+const whylikeTweenData = {
+	selector: ".why-like",
+	horizontalShift: -60,
+	triggerSelector: ".why-like",
+	pinState: true,
+	tabletWidth: 768,
+};
+
+const whylikeHeadingTweenData = {
+	selector: ".why-like__heading",
+	horizontalShift: 0,
+	triggerSelector: ".why-like__heading",
+	pinState: false,
+	tabletWidth: 768,
+};
+
 const principlesTween = new Tween(principlesTweenData);
 const principlesHeadingTween = new Tween(principlesHeadingTweenData);
+const whylikeTween = new Tween(whylikeTweenData);
+const whylikeHeadingTween = new Tween(whylikeHeadingTweenData);
 
 principlesTween.toggleTween();
-principlesHeadingTween.toggleTween();
+principlesTween.toggleTween();
+whylikeTween.toggleTween();
+whylikeHeadingTween.toggleTween();
 
 window.addEventListener("resize", principlesTween.toggleTween);
 window.addEventListener("resize", principlesHeadingTween.toggleTween);
+window.addEventListener("resize", whylikeTween.toggleTween);
+window.addEventListener("resize", whylikeHeadingTween.toggleTween);
 
 document
 	.querySelectorAll("[data-attribute-anchor]")
