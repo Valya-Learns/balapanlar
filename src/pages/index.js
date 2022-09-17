@@ -76,3 +76,36 @@ window.addEventListener("resize", principlesHeadingTween.toggleTween);
 document
 	.querySelectorAll("[data-attribute-anchor]")
 	.forEach((link) => scrollToAnchor(link));
+
+/// часть, анимирующая раздел FAQ
+const openButtons = document.querySelectorAll(".questions__button")
+
+// функция, показывающая или скрывающая текст ответа
+const openCloseAnswer = (answers) => {
+	answers.forEach((answer) => {
+		answer.classList.toggle("questions__text_shown");
+	});
+}
+
+// функция, которая меняет в кнопке раскрытия + на -
+const changeIcon = (openButton) => {
+	if (openButton.textContent === "+") {
+		openButton.textContent = "-"
+	} else { openButton.textContent = "+" };
+}
+
+// функция, изменяющая состояние области ответа
+const changeStatusOfAnswer = (openButton) => {
+	const openButtonParent = openButton.closest(".questions__element");
+	const answers = openButtonParent.querySelectorAll(".questions__text");
+
+	openCloseAnswer(answers);
+	changeIcon(openButton);
+};
+
+// вешаем на каждую кнопку открытия ответа обработчик события
+openButtons.forEach((openButton) => {
+	openButton.addEventListener("click", function () {
+		changeStatusOfAnswer(openButton);
+	})
+});
