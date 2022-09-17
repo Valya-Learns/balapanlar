@@ -126,8 +126,14 @@
 	background-color: white;
 }
 
-
 @media screen and (max-width: 768px) {
+	.why-like {
+		flex-direction: column;
+		padding: 0 75px;
+	}
+}
+
+@media screen and (max-width: 480px) {
 	.why-like {
 		flex-direction: column;
 		align-items: center;
@@ -143,20 +149,26 @@
 	letter-spacing: -1px;
 }
 
-@media screen and (max-width: 903px) {
+@media screen and (max-width: 768px) {
 	.why-like__heading {
 		align-self: center;
-		max-width: 594px;
-		margin: 80px 0;
+
+		/* max-width: 594px; */
+		margin: 0;
+		padding-bottom: 81px;
 		font-size: 48px;
+		line-height: 59px;
+		letter-spacing: -1px;
 		text-align: center;
 	}
 }
 
 @media screen and (max-width: 600px) {
 	.why-like__heading {
-		/* max-width: 260px; */
-		margin: 30px;
+		max-width: 260px;
+
+		/* margin: 30px; */
+		padding-bottom: 29px;
 		font-size: 36px;
 		line-height: 44px;
 		letter-spacing: -1px;
@@ -175,7 +187,7 @@
 	list-style: none;
 }
 
-@media screen and (max-width: 903px) {
+@media screen and (max-width: 768px) {
 	.why-like__list {
 		gap: 10px;
 	}
@@ -190,21 +202,22 @@
 	box-sizing: border-box;
 	width: 100%;
 	min-height: 650px;
-	padding-left: 120px;
+	padding: 0 120px;
 }
 
 
-@media screen and (max-width: 903px) {
+@media screen and (max-width: 768px) {
 	.why-like__item {
 		justify-content: center;
 		gap: 40px;
 		min-height: 524px;
-		padding: 0;
+		padding: 0 25px;
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 	.why-like__item {
+		/* align-items: flex-start; */
 		gap: 30px;
 		box-sizing: border-box;
 		min-height: 400px;
@@ -218,15 +231,29 @@
 
 .why-like__item_back_podhod {
 	background-image: url('../vendor/images/podhod.jpg');
-	background-position: center center;
+	background-position: 50% 50%;
 	background-size: cover;
 }
+
+@media screen and (max-width: 768px) {
+	.why-like__item_back_podhod {
+		background-image: url('../vendor/images/podhod_ipad.png');
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.why-like__item_back_podhod {
+		background-image: url('../vendor/images/podhod_iphone.png');
+	}
+}
+
 
 .why-like__item_back_olimpiads {
 	background-image: url('../vendor/images/Olimpiads.jpg');
 	background-position: center center;
 	background-size: cover;
 }
+
 
 .why-like__item_back_blue {
 	background-color: rgba(37, 72, 255, 1);
@@ -244,16 +271,18 @@
 	max-width: 666px;
 }
 
-@media screen and (max-width: 903px) {
+@media screen and (max-width: 768px) {
 	.why-like__text-container {
 		max-width: 503px;
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 	.why-like__text-container {
 		align-items: center;
-		gap: 15px;
+		gap: 30px;
+
+		/* margin-top: 50px; */
 	}
 }
 
@@ -267,7 +296,7 @@
 	letter-spacing: -1px;
 }
 
-@media screen and (max-width: 903px) {
+@media screen and (max-width: 768px) {
 	.why-like__statement {
 		width: 100%;
 		font-size: 40px;
@@ -304,13 +333,13 @@
 	column-gap: 4px;
 }
 
-@media screen and (max-width: 903px) {
+@media screen and (max-width: 768px) {
 	.why-like__text {
 		text-align: center;
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 	.why-like__text {
 		flex-direction: column;
 		align-items: center;
@@ -330,7 +359,7 @@
 	border-radius: 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 	.why-like__tag {
 		font-weight: 600;
 		font-size: 18px;
