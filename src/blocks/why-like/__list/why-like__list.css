@@ -1,0 +1,14 @@
+.why-like__list {
+	display: flex;
+	gap: 40px;
+	margin: 0;
+	padding: 0;
+	color: white;
+	list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+	.why-like__list {
+		gap: 10px;
+	}
+}

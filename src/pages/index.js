@@ -3,7 +3,7 @@ import { PopupWithCourse } from "../components/PopupWithCourse.js";
 import { PopupWithPartner } from "../components/PopupWithPartner.js";
 import { PopupWithBurger } from "../components/PopupWithBurger.js";
 import { checkScreenWidth } from "../components/headerState.js";
-import { Tween } from "../components/tween.js";
+// import { Tween } from "../components/tween.js";
 import { scrollToAnchor } from "../utils.js/anchorLinkScroll.js";
 
 const cards = document.querySelectorAll(".course-card");
