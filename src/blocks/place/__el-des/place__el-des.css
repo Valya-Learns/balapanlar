@@ -1,0 +1,33 @@
+.place__el-des {
+	position: relative;
+	bottom: 90px;
+	left: 0;
+	max-width: 308px;
+	margin: 0;
+	padding: 0 0 30px 30px;
+	color: white;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: -0.5px;
+}
+
+@media all and (max-width: 744px) {
+	.place__el-des {
+		max-width: 308px;
+		padding: 0 0 28px 30px;
+		font-size: 24px;
+		line-height: 29px;
+		letter-spacing: -0.5px;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.place__el-des {
+		bottom: 86px;
+		max-width: 168px;
+		padding: 0 0 17px 23px;
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
