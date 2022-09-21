@@ -13,6 +13,7 @@
 	.why-like__item {
 		justify-content: center;
 		gap: 40px;
+		min-width: auto;
 		min-height: 524px;
 		padding: 0 25px;
 	}
