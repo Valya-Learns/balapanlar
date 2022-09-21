@@ -9,5 +9,5 @@
 	align-items: flex-end;
 	box-sizing: border-box;
 	overflow: hidden;
+	cursor: pointer;
 }
-

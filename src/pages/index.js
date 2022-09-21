@@ -108,3 +108,17 @@ openButtons.forEach((openButton) => {
 		changeStatusOfAnswer(openButton);
 	})
 });
+
+
+//открытие попапа секции Как Нас Найти (place)
+const popupPlace = document.querySelector('.popup-place');
+const placeImage = document.querySelector('.place__element_type_back') ;
+
+placeImage.addEventListener('click', () => {
+	popupPlace.classList.add('popup-place_opened')
+});
+
+popupPlace.addEventListener('click', (evt) => {
+	evt.target.classList.remove('popup-place_opened')
+});
+

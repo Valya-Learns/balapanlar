@@ -102,6 +102,11 @@
 @import url('../blocks/popup/__partner-image/popup__partner-image.css');
 @import url('../blocks/popup/__partner-description/popup__partner-description.css');
 @import url('../blocks/popup/_type/popup_type_header.css');
+@import url('../blocks/popup-place/popup-place.css');
+@import url('../blocks/popup-place/_opened/popup-place_opened.css');
+@import url('../blocks/popup-place/__close-button/popup-place__close-button.css');
+@import url('../blocks/popup-place/__button-img/popup-place__button-img.css');
+@import url('../blocks/popup-place/___image/popup-place__image.css');
 @import url('../blocks/principles/principles.css');
 @import url('../blocks/principles/__card/principles__card.css');
 @import url('../blocks/principles/__text/principles__text.css');
