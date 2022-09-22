@@ -1,4 +1,4 @@
-.questions__subheading {
+.team__member-title {
 	margin: 0;
 	font-weight: 600;
 	font-size: 24px;
@@ -8,8 +8,16 @@
 
 
 @media screen and (max-width: 990px) {
-	.questions__subheading {
+	.team__member-title {
 		font-size: 18px;
 		line-height: 22px;
+        padding-top: 5px;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.team__member-title {
+        padding-top: 3px;
 	}
 }
