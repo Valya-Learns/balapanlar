@@ -7,7 +7,8 @@
 	background-size: cover;
 	background-position: center;
 	align-items: flex-end;
+	justify-content: space-between;
 	box-sizing: border-box;
 	overflow: hidden;
-	cursor: pointer;
+	padding: 0;
 }

@@ -24,9 +24,9 @@
 
 @media all and (max-width: 480px) {
 	.place__el-des {
-		bottom: 86px;
-		max-width: 168px;
-		padding: 0 0 17px 23px;
+		bottom: 69px;
+		width: 246px;
+		padding: 0 0 20px 20px;
 		font-size: 18px;
 		line-height: 22px;
 	}

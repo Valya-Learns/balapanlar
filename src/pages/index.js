@@ -112,9 +112,9 @@ openButtons.forEach((openButton) => {
 
 //открытие попапа секции Как Нас Найти (place)
 const popupPlace = document.querySelector('.popup-place');
-const placeImage = document.querySelector('.place__element_type_back') ;
+const placeOpenBtn = document.querySelector('.place__button') ;
 
-placeImage.addEventListener('click', () => {
+placeOpenBtn.addEventListener('click', () => {
 	popupPlace.classList.add('popup-place_opened')
 });
 

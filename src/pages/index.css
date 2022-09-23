@@ -132,6 +132,7 @@
 @import url('../blocks/place/__element/place__element.css');
 @import url('../blocks/place/__element/_type/place__element_type_back.css');
 @import url('../blocks/place/__el-des/place__el-des.css');
+@import url('../blocks/place/__button/place__button.css');
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__copy-block/footer__copy-block.css');
 @import url('../blocks/footer/__copy/footer__copy.css');
