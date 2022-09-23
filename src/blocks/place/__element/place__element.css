@@ -5,6 +5,9 @@
 	height: 100%;
 	box-sizing: border-box;
 	border-radius: 60px;
+	-moz-border-radius: 60px;
+	overflow: hidden;
+	padding: 16px;
 }
 
 @media all and (max-width: 992px) {

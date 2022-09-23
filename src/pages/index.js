@@ -118,7 +118,16 @@ placeImage.addEventListener('click', () => {
 	popupPlace.classList.add('popup-place_opened')
 });
 
+function openPlace() {
+	popupPlace.classList.remove('popup-place_opened');
+};
+
+const PlaceCloseBtn = document.querySelector('.popup-place__close-button')
+PlaceCloseBtn.addEventListener('click', () => {
+	openPlace()
+});
+
 popupPlace.addEventListener('click', (evt) => {
-	evt.target.classList.remove('popup-place_opened')
+	openPlace()
 });
 
